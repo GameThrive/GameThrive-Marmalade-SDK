@@ -1,0 +1,13 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the s3eGameThrive extension on iphone
+platform IPHONE
+
+options
+{
+    lib
+    output-name="lib/iphone/libs3eGameThrive.a"
+    output-name-debug="lib/iphone/libs3eGameThrive_d.a"
+}
+define S3E_BUILD_EXT
+
+subproject s3eGameThrive_build

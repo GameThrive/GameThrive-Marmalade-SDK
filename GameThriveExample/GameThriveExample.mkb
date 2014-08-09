@@ -1,0 +1,22 @@
+#!/usr/bin/env mkb
+subproject ../s3eGameThrive/s3eGameThrive.mkf
+
+files
+{
+    ["Source"]
+    GameThriveExample.cpp
+	
+	# iOS custom notification sound
+	[Data]
+    (data)
+    notification.wav
+}
+
+deployments
+{
+    android-extra-manifest=GameThriveExtraManifest.xml
+    iphone-link-opts="-weak_framework UIKit"
+
+	# For Android custom notification sound
+	android-external-res="android/res"
+}

@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 46;
+    objects = {
+
+/* Begin PBXBuildRule section */
+
+
+
+/* End PBXBuildRule section */
+
+/* Begin PBXBuildFile section */
+
+		A0000000000000000000000f /* edk_build.py in GameThrive */ = {isa = PBXBuildFile; fileRef = B00000000000000000000010;  };
+		A00000000000000000000013 /* edk.mkf in edk */ = {isa = PBXBuildFile; fileRef = B00000000000000000000014;  };
+		A00000000000000000000016 /* s3eEdk.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000017;  };
+		A00000000000000000000019 /* s3eEdkError.h in h */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001a;  };
+		A0000000000000000000001b /* s3eEdk_android.h in h */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001c;  };
+		A0000000000000000000001d /* s3eEdk_iphone.h in h */ = {isa = PBXBuildFile; fileRef = B0000000000000000000001e;  };
+		A0000000000000000000001f /* s3eEdk_osx.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000020;  };
+		A00000000000000000000021 /* s3eEdk_windows.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000022;  };
+		A00000000000000000000023 /* AirplayVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000024;  };
+		A00000000000000000000026 /* MarmaladeVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000027;  };
+		A00000000000000000000028 /* s3e.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000029;  };
+		A0000000000000000000002a /* s3eAccelerometer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002b;  };
+		A0000000000000000000002c /* s3eAudio.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002d;  };
+		A0000000000000000000002e /* s3eCamera.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000002f;  };
+		A00000000000000000000030 /* s3eClipboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000031;  };
+		A00000000000000000000032 /* s3eCompass.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000033;  };
+		A00000000000000000000034 /* s3eCompression.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000035;  };
+		A00000000000000000000036 /* s3eConfig.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000037;  };
+		A00000000000000000000038 /* s3eContacts.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000039;  };
+		A0000000000000000000003a /* s3eCrypto.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003b;  };
+		A0000000000000000000003c /* s3eDebug.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003d;  };
+		A0000000000000000000003e /* s3eDevice.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000003f;  };
+		A00000000000000000000040 /* s3eExt.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000041;  };
+		A00000000000000000000042 /* s3eFile.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000043;  };
+		A00000000000000000000044 /* s3eGL.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000045;  };
+		A00000000000000000000046 /* s3eHash.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000047;  };
+		A00000000000000000000048 /* s3eKeyboard.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000049;  };
+		A0000000000000000000004a /* s3eLicense.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000004b;  };
+		A0000000000000000000004c /* s3eLocation.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000004d;  };
+		A0000000000000000000004e /* s3eMemory.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000004f;  };
+		A00000000000000000000050 /* s3ePointer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000051;  };
+		A00000000000000000000052 /* s3eSecureStorage.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000053;  };
+		A00000000000000000000054 /* s3eSocket.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000055;  };
+		A00000000000000000000056 /* s3eSound.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000057;  };
+		A00000000000000000000058 /* s3eSoundRecord.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000059;  };
+		A0000000000000000000005a /* s3eSurface.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000005b;  };
+		A0000000000000000000005c /* s3eThread.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000005d;  };
+		A0000000000000000000005e /* s3eTimer.h in S3E API */ = {isa = PBXBuildFile; fileRef = B0000000000000000000005f;  };
+		A00000000000000000000060 /* s3eTypes.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000061;  };
+		A00000000000000000000062 /* s3eVersion.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000063;  };
+		A00000000000000000000064 /* s3eVibra.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000065;  };
+		A00000000000000000000066 /* s3eVideo.h in S3E API */ = {isa = PBXBuildFile; fileRef = B00000000000000000000067;  };
+		A00000000000000000000068 /* GTHTTPClient.o in GameThrive Library */ = {isa = PBXBuildFile; fileRef = B00000000000000000000069;  };
+		A0000000000000000000006b /* GameThrive.h in GameThrive Library */ = {isa = PBXBuildFile; fileRef = B0000000000000000000006c;  };
+		A0000000000000000000006d /* GameThrive.o in GameThrive Library */ = {isa = PBXBuildFile; fileRef = B0000000000000000000006e;  };
+		A0000000000000000000006f /* s3eGameThrive.defines.txt in docs */ = {isa = PBXBuildFile; fileRef = B00000000000000000000070;  };
+		A00000000000000000000072 /* s3eGameThrive.s4e in GameThrive */ = {isa = PBXBuildFile; fileRef = B00000000000000000000073;  };
+		A00000000000000000000074 /* s3eGameThrive_build.mkf in GameThrive */ = {isa = PBXBuildFile; fileRef = B00000000000000000000075;  };
+		A00000000000000000000076 /* s3eGameThrive_iphone.mkb in root */ = {isa = PBXBuildFile; fileRef = B00000000000000000000077;  };
+		A00000000000000000000078 /* s3eGameThrive.cpp in source */ = {isa = PBXBuildFile; fileRef = B00000000000000000000079;  };
+		A0000000000000000000007b /* s3eGameThrive_register.cpp in source */ = {isa = PBXBuildFile; fileRef = B0000000000000000000007c;  };
+		A0000000000000000000007d /* s3eGameThrive_autodefs.h in h */ = {isa = PBXBuildFile; fileRef = B0000000000000000000007e;  };
+		A00000000000000000000080 /* s3eGameThrive_internal.h in h */ = {isa = PBXBuildFile; fileRef = B00000000000000000000081;  };
+		A00000000000000000000082 /* s3eGameThrive_platform.mm in source */ = {isa = PBXBuildFile; fileRef = B00000000000000000000083;  };
+
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+
+		ref_s3eGameThrive_iphone_a /* s3eGameThrive_iphone */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = s3eGameThrive_iphone; sourceTree = "<absolute>"; };
+		B00000000000000000000010 /* edk_build.py in GameThrive */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = "edk_build.py"; path = "/Applications/Marmalade.app/Contents/s3e/edk/builder/edk_build.py";  sourceTree = "<absolute>"; };
+		B00000000000000000000014 /* edk.mkf in edk */ = {isa = PBXFileReference; explicitFileType = text; name = "edk.mkf"; path = "/Applications/Marmalade.app/Contents/s3e/edk/edk.mkf";  sourceTree = "<absolute>"; };
+		B00000000000000000000017 /* s3eEdk.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk.h"; path = "/Applications/Marmalade.app/Contents/s3e/edk/h/s3eEdk.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000001a /* s3eEdkError.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdkError.h"; path = "/Applications/Marmalade.app/Contents/s3e/edk/h/s3eEdkError.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000001c /* s3eEdk_android.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_android.h"; path = "/Applications/Marmalade.app/Contents/s3e/edk/h/s3eEdk_android.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000001e /* s3eEdk_iphone.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_iphone.h"; path = "/Applications/Marmalade.app/Contents/s3e/edk/h/s3eEdk_iphone.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000020 /* s3eEdk_osx.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_osx.h"; path = "/Applications/Marmalade.app/Contents/s3e/edk/h/s3eEdk_osx.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000022 /* s3eEdk_windows.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eEdk_windows.h"; path = "/Applications/Marmalade.app/Contents/s3e/edk/h/s3eEdk_windows.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000024 /* AirplayVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AirplayVersion.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/AirplayVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000027 /* MarmaladeVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MarmaladeVersion.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/MarmaladeVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000029 /* s3e.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3e.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3e.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000002b /* s3eAccelerometer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAccelerometer.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eAccelerometer.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000002d /* s3eAudio.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eAudio.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eAudio.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000002f /* s3eCamera.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCamera.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eCamera.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000031 /* s3eClipboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eClipboard.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eClipboard.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000033 /* s3eCompass.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompass.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eCompass.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000035 /* s3eCompression.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCompression.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eCompression.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000037 /* s3eConfig.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eConfig.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eConfig.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000039 /* s3eContacts.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eContacts.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eContacts.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000003b /* s3eCrypto.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eCrypto.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eCrypto.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000003d /* s3eDebug.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDebug.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eDebug.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000003f /* s3eDevice.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eDevice.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eDevice.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000041 /* s3eExt.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eExt.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eExt.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000043 /* s3eFile.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eFile.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eFile.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000045 /* s3eGL.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eGL.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eGL.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000047 /* s3eHash.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eHash.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eHash.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000049 /* s3eKeyboard.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eKeyboard.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eKeyboard.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000004b /* s3eLicense.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLicense.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eLicense.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000004d /* s3eLocation.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eLocation.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eLocation.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000004f /* s3eMemory.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eMemory.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eMemory.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000051 /* s3ePointer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3ePointer.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3ePointer.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000053 /* s3eSecureStorage.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSecureStorage.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eSecureStorage.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000055 /* s3eSocket.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSocket.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eSocket.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000057 /* s3eSound.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSound.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eSound.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000059 /* s3eSoundRecord.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSoundRecord.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eSoundRecord.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000005b /* s3eSurface.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eSurface.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eSurface.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000005d /* s3eThread.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eThread.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eThread.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000005f /* s3eTimer.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTimer.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eTimer.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000061 /* s3eTypes.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eTypes.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eTypes.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000063 /* s3eVersion.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVersion.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eVersion.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000065 /* s3eVibra.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVibra.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eVibra.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000067 /* s3eVideo.h in S3E API */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eVideo.h"; path = "/Applications/Marmalade.app/Contents/s3e/h/s3eVideo.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000069 /* GTHTTPClient.o in GameThrive Library */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GTHTTPClient.o"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/incoming/iphone/GTHTTPClient.o";  sourceTree = "<absolute>"; };
+		B0000000000000000000006c /* GameThrive.h in GameThrive Library */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GameThrive.h"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/incoming/iphone/GameThrive.h";  sourceTree = "<absolute>"; };
+		B0000000000000000000006e /* GameThrive.o in GameThrive Library */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GameThrive.o"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/incoming/iphone/GameThrive.o";  sourceTree = "<absolute>"; };
+		B00000000000000000000070 /* s3eGameThrive.defines.txt in docs */ = {isa = PBXFileReference; lastKnownFileType = text; name = "s3eGameThrive.defines.txt"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/interface/s3eGameThrive.defines.txt";  sourceTree = "<absolute>"; };
+		B00000000000000000000073 /* s3eGameThrive.s4e in GameThrive */ = {isa = PBXFileReference; lastKnownFileType = file; name = "s3eGameThrive.s4e"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/s3eGameThrive.s4e";  sourceTree = "<absolute>"; };
+		B00000000000000000000075 /* s3eGameThrive_build.mkf in GameThrive */ = {isa = PBXFileReference; explicitFileType = text; name = "s3eGameThrive_build.mkf"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/s3eGameThrive_build.mkf";  sourceTree = "<absolute>"; };
+		B00000000000000000000077 /* s3eGameThrive_iphone.mkb in root */ = {isa = PBXFileReference; explicitFileType = text; name = "s3eGameThrive_iphone.mkb"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/s3eGameThrive_iphone.mkb";  sourceTree = "<absolute>"; };
+		B00000000000000000000079 /* s3eGameThrive.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eGameThrive.cpp"; path = "../source/generic/s3eGameThrive.cpp";  sourceTree = SOURCE_ROOT; };
+		B0000000000000000000007c /* s3eGameThrive_register.cpp in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "s3eGameThrive_register.cpp"; path = "../source/generic/s3eGameThrive_register.cpp";  sourceTree = SOURCE_ROOT; };
+		B0000000000000000000007e /* s3eGameThrive_autodefs.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eGameThrive_autodefs.h"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/source/h/s3eGameThrive_autodefs.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000081 /* s3eGameThrive_internal.h in h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "s3eGameThrive_internal.h"; path = "/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/source/h/s3eGameThrive_internal.h";  sourceTree = "<absolute>"; };
+		B00000000000000000000083 /* s3eGameThrive_platform.mm in source */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objcpp; name = "s3eGameThrive_platform.mm"; path = "../source/iphone/s3eGameThrive_platform.mm";  sourceTree = SOURCE_ROOT; };
+
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+        frameworksobject /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+        B0000000000000000000000e /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                ref_s3eGameThrive_iphone_a /* s3eGameThrive_iphone */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        A0000000000000000000000b /* CustomTemplate */ = {
+            isa = PBXGroup;
+            children = (
+				B0000000000000000000000c,
+				B0000000000000000000000d,
+				B0000000000000000000000e,
+				C00000000000000000000011,
+				C00000000000000000000015,
+				B00000000000000000000077,
+            );
+            name = CustomTemplate;
+            sourceTree = "<group>";
+        };
+
+
+        C00000000000000000000011 /* Extensions */ =  {
+            isa = PBXGroup;
+            children = (
+				C00000000000000000000012,
+            );
+            name = Extensions;
+            sourceTree = "<group>";
+        };
+
+        C00000000000000000000012 /* GameThrive */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000010,
+				C0000000000000000000006a,
+				C00000000000000000000071,
+				B00000000000000000000073,
+				B00000000000000000000075,
+				C0000000000000000000007a,
+				C0000000000000000000007f,
+            );
+            name = GameThrive;
+            sourceTree = "<group>";
+        };
+
+        C0000000000000000000006a /* GameThrive Library */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000069,
+				B0000000000000000000006c,
+				B0000000000000000000006e,
+            );
+            name = "GameThrive Library";
+            sourceTree = "<group>";
+        };
+
+        C00000000000000000000025 /* S3E API */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000024,
+				B00000000000000000000027,
+				B00000000000000000000029,
+				B0000000000000000000002b,
+				B0000000000000000000002d,
+				B0000000000000000000002f,
+				B00000000000000000000031,
+				B00000000000000000000033,
+				B00000000000000000000035,
+				B00000000000000000000037,
+				B00000000000000000000039,
+				B0000000000000000000003b,
+				B0000000000000000000003d,
+				B0000000000000000000003f,
+				B00000000000000000000041,
+				B00000000000000000000043,
+				B00000000000000000000045,
+				B00000000000000000000047,
+				B00000000000000000000049,
+				B0000000000000000000004b,
+				B0000000000000000000004d,
+				B0000000000000000000004f,
+				B00000000000000000000051,
+				B00000000000000000000053,
+				B00000000000000000000055,
+				B00000000000000000000057,
+				B00000000000000000000059,
+				B0000000000000000000005b,
+				B0000000000000000000005d,
+				B0000000000000000000005f,
+				B00000000000000000000061,
+				B00000000000000000000063,
+				B00000000000000000000065,
+				B00000000000000000000067,
+            );
+            name = "S3E API";
+            sourceTree = "<group>";
+        };
+
+        C00000000000000000000071 /* docs */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000070,
+            );
+            name = docs;
+            sourceTree = "<group>";
+        };
+
+        C00000000000000000000015 /* edk */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000014,
+				C00000000000000000000018,
+				C00000000000000000000025,
+            );
+            name = edk;
+            sourceTree = "<group>";
+        };
+
+        C0000000000000000000007f /* h */ =  {
+            isa = PBXGroup;
+            children = (
+				B0000000000000000000007e,
+				B00000000000000000000081,
+            );
+            name = h;
+            sourceTree = "<group>";
+        };
+
+        C00000000000000000000018 /* h */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000017,
+				B0000000000000000000001a,
+				B0000000000000000000001c,
+				B0000000000000000000001e,
+				B00000000000000000000020,
+				B00000000000000000000022,
+            );
+            name = h;
+            sourceTree = "<group>";
+        };
+
+        C0000000000000000000007a /* source */ =  {
+            isa = PBXGroup;
+            children = (
+				B00000000000000000000079,
+				B0000000000000000000007c,
+				B00000000000000000000083,
+            );
+            name = source;
+            sourceTree = "<group>";
+        };
+        B0000000000000000000000c /* Resources */ = {
+            isa = PBXGroup;
+            children = (
+                
+            );
+            name = Resources;
+            sourceTree = "<group>";
+        };
+        B0000000000000000000000d /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+/* End PBXGroup section */
+
+
+/* Begin PBXShellScriptBuildPhase section */
+
+        shell_script_object0 /* Copy Target to Final Destination */ = {
+            isa = PBXShellScriptBuildPhase;
+            name = "Copy Target to Final Destination";
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            showEnvVarsInLog = 0;
+            shellScript = "
+mkdir -p /Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/lib/iphone
+
+set -e
+set -x
+
+if [ $CONFIGURATION = 'Release' ]; then
+    TARGET=/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/lib/iphone/libs3eGameThrive.a
+else
+    TARGET=/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/lib/iphone/libs3eGameThrive_d.a
+fi
+
+cp $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH $TARGET
+";
+        };
+
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+
+        69000000000000000000000A /* s3eGameThrive_iphone */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = buildconfiglisttarget /* Build configuration list for PBXNativeTarget "s3eGameThrive_iphone" */;
+            buildPhases = (
+                resourcesobject /* Resources */,
+                sourcesobject /* Sources */,
+                frameworksobject /* Frameworks */,
+				shell_script_object0 /* Copy Target to Final Destination */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                
+            );
+            name = s3eGameThrive_iphone;
+            productName = s3eGameThrive_iphone;
+            productReference = ref_s3eGameThrive_iphone_a /* s3eGameThrive_iphone */;
+            productType = "com.apple.product-type.library.static";
+        };
+
+/* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+
+
+
+/* End PBXTargetDependency section */
+
+/* Begin PBXProject section */
+        A0000000000000000000000a /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastUpgradeCheck = 0430;
+            };
+            buildConfigurationList = buildconfiglistproject /* Build configuration list for PBXProject "s3eGameThrive_iphone" */;
+            compatibilityVersion = "Xcode 3.2";
+            hasScannedForEncodings = 1;
+            mainGroup = A0000000000000000000000b /* CustomTemplate */;
+            projectReferences = (
+            );
+            projectDirPath = "";
+            projectRoot = "";
+			targets = (
+
+            69000000000000000000000A /* s3eGameThrive_iphone */,
+            );
+        };
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+
+
+
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+        resourcesobject /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+        sourcesobject /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                A00000000000000000000078,
+				A0000000000000000000007b,
+				A00000000000000000000082,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+
+        T00000000000000000000009 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+                ONLY_ACTIVE_ARCH = YES;
+                GCC_CW_ASM_SYNTAX = NO;
+                GCC_C_LANGUAGE_STANDARD = c99;
+                GCC_THUMB_SUPPORT = NO;
+                GCC_ENABLE_CPP_RTTI = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PRECOMPILE_PREFIX_HEADER = NO;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+
+				HEADER_SEARCH_PATHS = (
+					"/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/source/h/",
+					"/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/h/",
+					"/Applications/Marmalade.app/Contents/s3e/edk/h/",
+					"/Applications/Marmalade.app/Contents/s3e/h/",
+					"/Applications/Marmalade.app/Contents/s3e/h/ext/",
+					"/Applications/Marmalade.app/Contents/modules/iwutil/h/",
+					"/Applications/Marmalade.app/Contents/modules/iwcore/h/",
+					"/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/incoming/iphone"
+				);
+				LIBRARY_SEARCH_PATHS = (
+					
+					"$(inherited)",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+                    
+                    "$(inherited)",
+                );
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = Info.plist;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_CFLAGS = ( 
+"-fsigned-char",
+					"-fno-strict-aliasing",
+					"-fno-builtin",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-Wno-unused",
+					"-Wno-parentheses",
+					"-Wno-format-security",
+					"-arch",
+					"armv7",
+					"-mfpu=vfpv3",
+					"-mfloat-abi=softfp",
+					"-mno-thumb","-g",
+					"-O0",
+					"-include",
+					"temp_defines_debug.h",					"-include temp_defines_debug.h",
+				);
+				"OTHER_CFLAGS[sdk=iphonesimulator*]" = ( 
+"-fsigned-char",
+					"-fno-strict-aliasing",
+					"-fno-builtin",
+					"-fno-builtin",
+					"-Wall",
+					"-Wno-unused",
+					"-Wno-parentheses",
+					"-Wno-format-security",
+					"-m32",
+					"-fasynchronous-unwind-tables","-g",
+					"-O0",
+					"-include",
+					"temp_defines_debug.h",                    "-include temp_defines_debug.h",
+                );
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fno-exceptions",
+				);
+				"OTHER_CPLUSPLUSFLAGS[sdk=iphonesimulator*]" = (
+                    "$(OTHER_CFLAGS)",
+                    "-fno-exceptions",
+                );
+				OTHER_LDFLAGS = (
+					
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+                    
+                );
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		
+
+        T00000000000000000000007 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+                ONLY_ACTIVE_ARCH = YES;
+                GCC_CW_ASM_SYNTAX = NO;
+                GCC_C_LANGUAGE_STANDARD = c99;
+                GCC_THUMB_SUPPORT = NO;
+                GCC_ENABLE_CPP_RTTI = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PRECOMPILE_PREFIX_HEADER = NO;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+
+				HEADER_SEARCH_PATHS = (
+					"/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/source/h/",
+					"/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/h/",
+					"/Applications/Marmalade.app/Contents/s3e/edk/h/",
+					"/Applications/Marmalade.app/Contents/s3e/h/",
+					"/Applications/Marmalade.app/Contents/s3e/h/ext/",
+					"/Applications/Marmalade.app/Contents/modules/iwutil/h/",
+					"/Applications/Marmalade.app/Contents/modules/iwcore/h/",
+					"/Users/hiptic/Documents/GameThrive/SDK/Marmalade/Android/extension/incoming/iphone"
+				);
+				LIBRARY_SEARCH_PATHS = (
+					
+					"$(inherited)",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+                    
+                    "$(inherited)",
+                );
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = Info.plist;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_CFLAGS = ( 
+"-fsigned-char",
+					"-fno-strict-aliasing",
+					"-fno-builtin",
+					"-Wall",
+					"-fomit-frame-pointer",
+					"-Wno-unused",
+					"-Wno-parentheses",
+					"-Wno-format-security",
+					"-arch",
+					"armv7",
+					"-mfpu=vfpv3",
+					"-mfloat-abi=softfp",
+					"-mno-thumb","-O3",
+					"-include",
+					"temp_defines_release.h",					"-include temp_defines_release.h",
+				);
+				"OTHER_CFLAGS[sdk=iphonesimulator*]" = ( 
+"-fsigned-char",
+					"-fno-strict-aliasing",
+					"-fno-builtin",
+					"-fno-builtin",
+					"-Wall",
+					"-Wno-unused",
+					"-Wno-parentheses",
+					"-Wno-format-security",
+					"-m32",
+					"-fasynchronous-unwind-tables","-O3",
+					"-include",
+					"temp_defines_release.h",                    "-include temp_defines_release.h",
+                );
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fno-exceptions",
+				);
+				"OTHER_CPLUSPLUSFLAGS[sdk=iphonesimulator*]" = (
+                    "$(OTHER_CFLAGS)",
+                    "-fno-exceptions",
+                );
+				OTHER_LDFLAGS = (
+					
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+                    
+                );
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		
+        C00000000000000000000002 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ARCHS = "armv7";
+                DEAD_CODE_STRIPPING = NO;
+                GCC_THUMB_SUPPORT = NO;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_ENABLE_CPP_RTTI = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;  
+                GCC_PRECOMPILE_PREFIX_HEADER = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; 
+				INFOPLIST_FILE = Info.plist;
+                LINK_WITH_STANDARD_LIBRARIES = YES;
+                PRODUCT_NAME = s3eGameThrive_iphone;
+            };
+            name = Debug;
+        };
+        C00000000000000000000004 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ARCHS = "armv7";
+                ONLY_ACTIVE_ARCH = YES;
+                DEAD_CODE_STRIPPING = NO;
+                GCC_CW_ASM_SYNTAX = NO;
+                GCC_DYNAMIC_NO_PIC = NO; 
+                GCC_ENABLE_CPP_RTTI = YES;
+                GCC_THUMB_SUPPORT = NO;
+                GCC_PRECOMPILE_PREFIX_HEADER = NO;
+                LINK_WITH_STANDARD_LIBRARIES = YES;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; 
+				INFOPLIST_FILE = Info.plist;
+                PRODUCT_NAME = s3eGameThrive_iphone;
+            };
+            name = Release;
+        }; 
+
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+
+        buildconfiglistproject /* Build configuration list for PBXProject "s3eGameThrive_iphone" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                T00000000000000000000003 /* Debug */,
+                T00000000000000000000005 /* Release */,
+                T00000000000000000000007 /* Release ARM */,
+                T00000000000000000000009 /* Debug ARM */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+
+        buildconfiglisttarget /* Build configuration list for PBXNativeTarget "s3eGameThrive_iphone" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C00000000000000000000002 /* Debug */,
+                C00000000000000000000004 /* Release */,
+                C00000000000000000000006 /* Release ARM */,
+                C00000000000000000000008 /* Debug ARM */,
+            );
+            defaultConfigurationIsVisible = 0;
+        };
+/* End XCConfigurationList section */
+    };
+    rootObject = A0000000000000000000000a /* Project object */;
+}

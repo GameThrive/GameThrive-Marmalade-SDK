@@ -1,0 +1,15 @@
+*.log
+*.tlog
+
+*.map
+*.ii
+
+# Object files
+*.o
+*.os
+*.obj
+*.ko
+
+*.s
+
+deployments/

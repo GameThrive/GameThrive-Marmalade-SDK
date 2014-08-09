@@ -1,0 +1,17 @@
+#!/usr/bin/env mkb
+# Builder mkb file for the GameThrive extension on android
+platform LINUX
+
+buildtype (SCONS, ARM)
+
+define S3E_ANDROID
+
+options
+{
+    dll
+    output-name="lib/android/libGameThrive.so"
+    output-name-debug="lib/android/libGameThrive_d.so"
+}
+define S3E_BUILD_EXT
+
+subproject s3eGameThrive_build
