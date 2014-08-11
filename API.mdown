@@ -1,15 +1,15 @@
-# GameThrive Unity SDK API
+# GameThrive Marmalade SDK API
 
 
 List of Functions
 ----------
 - [`GameThriveInitialize`](#GameThriveInitialize)
-- [`SendTag`](#sendTag)
-- [`GetTags`](#getTags)
-- [`DeleteTag`](#deleteTag)
-- [`SendPurchase`](#sendPurchase)
-- [`RegisterForPushNotifications`](#RegisterForPushNotifications)
-- [`GetIdsAvailable`](#idsAvailable)
+- [`GameThriveSendTag`](#sendTag)
+- [`GameThriveGetTags`](#getTags)
+- [`GameThriveDeleteTag`](#deleteTag)
+- [`GameThriveSendPurchase`](#sendPurchase)
+- [`GameThriveRegisterForPushNotifications`](#RegisterForPushNotifications)
+- [`GameThriveGetIdsAvailable`](#idsAvailable)
 
 List of Callback Results
 -----
