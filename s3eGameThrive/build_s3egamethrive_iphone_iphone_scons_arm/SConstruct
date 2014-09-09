@@ -13,10 +13,10 @@ from os.path import join
 
 SetOption("implicit_cache" ,1)
 
-target_name = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/lib/iphone/libs3eGameThrive.a'
-target_name_debug = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/lib/iphone/libs3eGameThrive_d.a'
-target_name_rvct = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/lib/iphone/libs3eGameThrive.a'
-target_name_debug_rvct = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/lib/iphone/libs3eGameThrive_d.a'
+target_name = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive.a'
+target_name_debug = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive_d.a'
+target_name_rvct = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive.a'
+target_name_debug_rvct = '/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive_d.a'
 sdk_root = '/Applications/Marmalade.app/Contents'
 
 scons_version = SCons.__version__.split(".")[:2]
@@ -71,8 +71,8 @@ libraries_rvct_d = SplitN(r'''
 ''')
 
 extra_objects = SplitN(r'''
-/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/incoming/iphone/GameThrive.o
-/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/incoming/iphone/GTHTTPClient.o
+/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GameThrive.o
+/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GTHTTPClient.o
 ''')
 
 libpath = SplitN(r'''
@@ -168,10 +168,10 @@ else:
 
 
 paths = [
-    r'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin',
+    r'/Applications/Xcode6-Beta7.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin',
     r'/usr/bin',
-    r'/Applications/Xcode.app/Contents/Developer/usr/bin',
-    r'/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin',
+    r'/Applications/Xcode6-Beta7.app/Contents/Developer/usr/bin',
+    r'/Applications/Xcode6-Beta7.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin',
     r'/opt/local/bin',
 ]
 
@@ -248,15 +248,15 @@ if compiler == 'rvct':
     env['SHCCFLAGS'] = SCons.Util.CLVar('$CCFLAGS -fPIC')
 
 else:
-    env.Append(LINKFLAGS=['-arch', 'armv7', '-dead_strip', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk', '-miphoneos-version-min=4.3'])
+    env.Append(LINKFLAGS=['-arch', 'armv7', '-dead_strip', '-isysroot', '/Applications/Xcode6-Beta7.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk', '-miphoneos-version-min=4.3'])
     if env['debug']:
         env.Append(CCFLAGS=['-g', '-O0', '-include', 'temp_defines_debug.h'])
-        env.Append(LINKFLAGS=['-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/lib/iphone/libs3eGameThrive_d.map'])
+        env.Append(LINKFLAGS=['-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive_d.map'])
         env.Append(PLFLAGS=[])
     else:
         env.Append(CCFLAGS=['-O3', '-include', 'temp_defines_release.h'])
-        env.Append(LINKFLAGS=['-Wl,-S', '-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/extension/lib/iphone/libs3eGameThrive.map'])
-    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fno-builtin', '-Wall', '-fomit-frame-pointer', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-Wno-format-security', '-arch', 'armv7', '-mfpu=vfpv3', '-mfloat-abi=softfp', '-mno-thumb', '-miphoneos-version-min=4.3', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2', '-fPIC'])
+        env.Append(LINKFLAGS=['-Wl,-S', '-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive.map'])
+    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fno-builtin', '-Wall', '-fomit-frame-pointer', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-Wno-format-security', '-arch', 'armv7', '-mfpu=vfpv3', '-mfloat-abi=softfp', '-mno-thumb', '-miphoneos-version-min=4.3', '-isysroot', '/Applications/Xcode6-Beta7.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2', '-fPIC'])
     env.Append(CFLAGS=['-std=gnu99'])
     env.Append(CXXFLAGS=['-fno-exceptions', '-fvisibility-inlines-hidden'])
     env['ARFLAGS'] = ['rc']
