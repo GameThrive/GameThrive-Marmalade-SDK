@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    </ItemGroup>
+
+    <PropertyGroup Label="Globals">
+      <ProjectGuid>{BA06C18B-08A0-16E9-183A-9AA3F837F553}</ProjectGuid>
+      <RootNamespace>s3eGameThriveExtension</RootNamespace>
+      <DefaultLanguage>en-US</DefaultLanguage>
+      <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+      <WinMDAssembly>True</WinMDAssembly>
+    </PropertyGroup>
+
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v110_wp80</PlatformToolset>
+      <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>false</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v110_wp80</PlatformToolset>
+      <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>true</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v110_wp80</PlatformToolset>
+      <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+      <ConfigurationType>DynamicLibrary</ConfigurationType>
+      <UseDebugLibraries>false</UseDebugLibraries>
+      <CharacterSet>Unicode</CharacterSet>
+      <PlatformToolset>v110_wp80</PlatformToolset>
+      <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    </PropertyGroup>
+    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+    <ImportGroup Label="PropertySheets">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+
+    <PropertyGroup Label="UserMacros" />
+        <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(WP80ToolSetPath)bin;$(WindowsSDK_ExecutablePath_x86);$(WindowsMinSDKDir)bin\x86;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+      <IntDir>Debug_s3eGameThrive_wp8_vc12_wp8toolset_x86\</IntDir>
+      <OutDir>c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\lib\wp8\$(PlatformTarget)\$(Configuration)\</OutDir>
+      <TargetName>s3eGameThriveExtension</TargetName>
+      <TargetExt>.dll</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(WP80ToolSetPath)bin;$(WindowsSDK_ExecutablePath_x86);$(WindowsMinSDKDir)bin\x86;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+      <IntDir>Release_s3eGameThrive_wp8_vc12_wp8toolset_x86\</IntDir>
+      <OutDir>c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\lib\wp8\$(PlatformTarget)\$(Configuration)\</OutDir>
+      <TargetName>s3eGameThriveExtension</TargetName>
+      <TargetExt>.dll</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+      <LinkIncremental>true</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(WP80ToolSetPath)bin\x86_arm;$(WP80ToolSetPath)bin;$(WindowsSDK_ExecutablePath_x86);$(WindowsMinSDKDir)bin\arm;$(WindowsMinSDKDir)bin\x86;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Debug_s3eGameThrive_wp8_vc12_wp8toolset_arm\</IntDir>
+      <OutDir>c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\lib\wp8\$(PlatformTarget)\$(Configuration)\</OutDir>
+      <TargetName>s3eGameThriveExtension</TargetName>
+      <TargetExt>.dll</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+      <LinkIncremental>false</LinkIncremental>
+      <ExecutablePath>$(S3E_DIR)\bin;$(WP80ToolSetPath)bin\x86_arm;$(WP80ToolSetPath)bin;$(WindowsSDK_ExecutablePath_x86);$(WindowsMinSDKDir)bin\arm;$(WindowsMinSDKDir)bin\x86;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+      <IntDir>Release_s3eGameThrive_wp8_vc12_wp8toolset_arm\</IntDir>
+      <OutDir>c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\lib\wp8\$(PlatformTarget)\$(Configuration)\</OutDir>
+      <TargetName>s3eGameThriveExtension</TargetName>
+      <TargetExt>.dll</TargetExt>
+      <GenerateManifest>false</GenerateManifest>
+    </PropertyGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);I3D_ARCH_X86;</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h;c:/marmalade/7.4/s3e/edk/h;c:/marmalade/7.4/s3e/h;c:/marmalade/7.4/s3e/h/ext;c:/marmalade/7.4/modules/iwutil/h;c:/marmalade/7.4/modules/iwcore/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>    
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;%(AdditionalDependencies);edk_d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\marmalade\7.4\s3e\edk\lib\wp8\x86</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ForceFileOutput></ForceFileOutput>
+      <WindowsMetadataFile>$(OutDir)$(TargetName).winmd</WindowsMetadataFile>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);I3D_ARCH_X86;</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h;c:/marmalade/7.4/s3e/edk/h;c:/marmalade/7.4/s3e/h;c:/marmalade/7.4/s3e/h/ext;c:/marmalade/7.4/modules/iwutil/h;c:/marmalade/7.4/modules/iwcore/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>    
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;%(AdditionalDependencies);edk.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\marmalade\7.4\s3e\edk\lib\wp8\x86</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <WindowsMetadataFile>$(OutDir)$(TargetName).winmd</WindowsMetadataFile>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);I3D_ARCH_ARM;</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\temp_defines_debug.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h;c:/marmalade/7.4/s3e/edk/h;c:/marmalade/7.4/s3e/h;c:/marmalade/7.4/s3e/h/ext;c:/marmalade/7.4/modules/iwutil/h;c:/marmalade/7.4/modules/iwcore/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>    
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;%(AdditionalDependencies);edk_d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\marmalade\7.4\s3e\edk\lib\wp8\arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ForceFileOutput></ForceFileOutput>
+      <WindowsMetadataFile>$(OutDir)$(TargetName).winmd</WindowsMetadataFile>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+    </ItemDefinitionGroup>
+    <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions);I3D_ARCH_ARM;</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalOptions>/S3Eproject /J /FI"c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\temp_defines_release.h"</AdditionalOptions>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <AdditionalIncludeDirectories>c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h;c:/marmalade/7.4/s3e/edk/h;c:/marmalade/7.4/s3e/h;c:/marmalade/7.4/s3e/h/ext;c:/marmalade/7.4/modules/iwutil/h;c:/marmalade/7.4/modules/iwcore/h;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8;.</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>    
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions></AdditionalOptions>
+      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;%(AdditionalDependencies);edk.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>c:\marmalade\7.4\s3e\edk\lib\wp8\arm</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EntryPointSymbol></EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>true</GenerateWindowsMetadata>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <WindowsMetadataFile>$(OutDir)$(TargetName).winmd</WindowsMetadataFile>
+    </Link>
+    <Lib>
+      <AdditionalOptions> %(AdditionalOptions) </AdditionalOptions>
+    </Lib>
+    </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/wp8/AssemblyInfo.cs" />
+    <None Include="c:/marmalade/7.4/s3e/edk/edk.mkf" />
+    <None Include="c:/marmalade/7.4/s3e/edk/builder/edk_build.py" />
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/wp8/s3eGameThrive.cs" />
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/interface/s3eGameThrive.defines.txt" />
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3eGameThrive.s4e" />
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_build.mkf" />
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_wp8_cs.mkf" />
+    <CustomBuild Include="..\s3eGameThrive_wp8.mkb">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Marmalade\7.4\s3e\python\python.exe" "C:\Marmalade\7.4\s3e\makefile_builder\mkb.py" "c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/s3eGameThrive_wp8.mkb" "--default-buildenv=vc12" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">s3eGameThrive_wp8_vc12_wp8toolset.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_wp8_cs.mkf;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3eGameThrive.s4e;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_build.mkf;c:/marmalade/7.4/s3e/edk/edk.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Marmalade\7.4\s3e\python\python.exe" "C:\Marmalade\7.4\s3e\makefile_builder\mkb.py" "c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/s3eGameThrive_wp8.mkb" "--default-buildenv=vc12" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">s3eGameThrive_wp8_vc12_wp8toolset.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_wp8_cs.mkf;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3eGameThrive.s4e;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_build.mkf;c:/marmalade/7.4/s3e/edk/edk.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">"C:\Marmalade\7.4\s3e\python\python.exe" "C:\Marmalade\7.4\s3e\makefile_builder\mkb.py" "c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/s3eGameThrive_wp8.mkb" "--default-buildenv=vc12" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">s3eGameThrive_wp8_vc12_wp8toolset.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_wp8_cs.mkf;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3eGameThrive.s4e;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_build.mkf;c:/marmalade/7.4/s3e/edk/edk.mkf</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">"C:\Marmalade\7.4\s3e\python\python.exe" "C:\Marmalade\7.4\s3e\makefile_builder\mkb.py" "c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/s3eGameThrive_wp8.mkb" "--default-buildenv=vc12" --msvc-project</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">s3eGameThrive_wp8_vc12_wp8toolset.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_wp8_cs.mkf;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3eGameThrive.s4e;c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_build.mkf;c:/marmalade/7.4/s3e/edk/edk.mkf</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/AirplayVersion.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/MarmaladeVersion.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3e.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eAccelerometer.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eAudio.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCamera.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eClipboard.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCompass.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCompression.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eConfig.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eContacts.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCrypto.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eDebug.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eDevice.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdkError.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_android.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_iphone.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_osx.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_windows.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eExt.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eFile.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eGL.h" />
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h/s3eGameThrive_autodefs.h" />
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h/s3eGameThrive_internal.h" />
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/wp8/s3eGameThrive_shim.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eHash.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eKeyboard.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eLicense.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eLocation.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eMemory.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3ePointer.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSecureStorage.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSocket.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSound.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSoundRecord.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSurface.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eThread.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eTimer.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eTypes.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVersion.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVibra.h" />
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVideo.h" />
+    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset/temp_defines_debug.h" />
+    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset/temp_defines_release.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\generic\s3eGameThrive.cpp" />
+    <ClCompile Include="..\source\wp8\s3eGameThrive_platform.cpp" />
+    <ClCompile Include="..\source\generic\s3eGameThrive_register.cpp" />
+    <ClCompile Include="..\source\wp8\s3eGameThrive_shim.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Windows">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ItemGroup>
+    <Reference Include="s3e_native">
+      <HintPath>c:\marmalade\7.4\s3e\loader\wp8\$(PlatformTarget)\$(Configuration)\s3e_native.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

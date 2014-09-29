@@ -35,12 +35,28 @@ static char* CopyToCString(NSString* string) {
 	return NULL;
 }
 
+@implementation UIApplication(GameThriveMarmaladePush)
 
+BOOL marmInitDone = false;
 
-@implementation UIApplication(GameThrivePush)
+NSString* mAlertMessage;
+NSDictionary* mAdditionalData;
+BOOL mIsActive;
 
-NSDictionary* launchDict;
-
+void initGameThriveObject(NSDictionary* launchOptions, const char* appId, BOOL autoRegister) {
+    if (gameThrive == nil) {
+        NSString* appIdStr = (appId ? [NSString stringWithUTF8String: appId] : nil);
+        
+        gameThrive = [[GameThrive alloc] initWithLaunchOptions:launchOptions appId:appIdStr handleNotification:^(NSString* message, NSDictionary* additionalData, BOOL isActive) {
+            mAlertMessage = message;
+            mAdditionalData = additionalData;
+            mIsActive = isActive;
+            
+            if (marmInitDone)
+                processNotificationOpened();
+        } autoRegister:autoRegister];
+    }
+}
 
 
 static void switchMethods(Class inClass, SEL oldSel, SEL newSel, IMP impl, const char* sig)
@@ -50,59 +66,42 @@ static void switchMethods(Class inClass, SEL oldSel, SEL newSel, IMP impl, const
 }
 
 + (void)load {
-    method_exchangeImplementations(class_getInstanceMethod(self, @selector(setDelegate:)), class_getInstanceMethod(self, @selector(setGameThriveDelegate:)));
+    method_exchangeImplementations(class_getInstanceMethod(self, @selector(setDelegate:)), class_getInstanceMethod(self, @selector(setGameThriveMarmaladeDelegate:)));
 }
 
-- (void) setGameThriveDelegate:(id<UIApplicationDelegate>)delegate {
+- (void) setGameThriveMarmaladeDelegate:(id<UIApplicationDelegate>)delegate {
     static Class delegateClass = nil;
     
-	if(delegateClass == [delegate class]) {
-		[self setGameThriveDelegate:delegate];
-		return;
-	}
+    if(delegateClass == [delegate class]) {
+      [self setGameThriveMarmaladeDelegate:delegate];
+      return;
+    }
     
-	delegateClass = [delegate class];
-    
-	switchMethods(delegateClass, @selector(application:didRegisterForRemoteNotificationsWithDeviceToken:),
-                  @selector(application:blankMethod:), (IMP)didRegisterForRemoteNotificationsWithDeviceToken_GTLocal, "v@:::");
-    
-    switchMethods(delegateClass, @selector(application:didReceiveRemoteNotification:),
-                  @selector(application:blankMethod2:), (IMP)didReceiveRemoteNotification_GTLocal, "v@:::");
+    delegateClass = [delegate class];
     
     switchMethods(delegateClass, @selector(application:didFinishLaunchingWithOptions:),
                   @selector(application:selectorDidFinishLaunchingWithOptions:), (IMP)didFinishLaunchingWithOptions_GTLocal, "v@:::");
     
-    [self setGameThriveDelegate:delegate];
-}
-
-void didRegisterForRemoteNotificationsWithDeviceToken_GTLocal(id self, SEL _cmd, id application, id deviceToken) {
-    NSLog(@"Device Registered with Apple!");
-    [gameThrive registerDeviceToken:deviceToken onSuccess:^(NSDictionary* results) {
-        NSLog(@"Device Registered with GameThrive.");
-    } onFailure:^(NSError* error) {
-        NSLog(@"Device Registion Error with GameThrive: %@", error);
-    }];
+    [self setGameThriveMarmaladeDelegate:delegate];
 }
 
 BOOL didFinishLaunchingWithOptions_GTLocal(id self, SEL _cmd, id application, id launchOptions) {
-    launchDict = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
-    
     BOOL result = YES;
     
-	if ([self respondsToSelector:@selector(application:selectorDidFinishLaunchingWithOptions:)]) {
-		if (![self application:application selectorDidFinishLaunchingWithOptions:launchOptions])
-            result = NO;
+    if ([self respondsToSelector:@selector(application:selectorDidFinishLaunchingWithOptions:)]) {
+        BOOL openedFromNotification = ([launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey] != nil);
+        if (openedFromNotification)
+            initGameThriveObject(launchOptions, nil, true);
+
+        if (![self application:application selectorDidFinishLaunchingWithOptions:launchOptions])
+          result = NO;
     }
     else {
-		[self applicationDidFinishLaunching:application];
-		result = YES;
-	}
+        [self applicationDidFinishLaunching:application];
+        result = YES;
+    }
     
 	return result;
-}
-
-void didReceiveRemoteNotification_GTLocal(id self, SEL _cmd, id application, id userInfo) {
-    processNotificationOpened(userInfo, [application applicationState] == UIApplicationStateActive);
 }
 
 const char* dictionaryToJsonChar(NSDictionary* dictionaryToConvert) {
@@ -112,16 +111,13 @@ const char* dictionaryToJsonChar(NSDictionary* dictionaryToConvert) {
     return [jsonRequestData UTF8String];
 }
 
-void processNotificationOpened(NSDictionary* messageData, BOOL isActive) {
-    [gameThrive notificationOpened:messageData];
-    
+void processNotificationOpened() {
     GameThriveNotificationReceivedResult result;
-	result.m_Message = CopyToCString([gameThrive getMessageString]);
-	
-    NSDictionary* additionalData = [gameThrive getAdditionalData];
-    if (additionalData)
-        result.m_AdditionalData = dictionaryToJsonChar(additionalData);
-	result.m_isActive = isActive;
+    result.m_Message = CopyToCString(mAlertMessage);
+    
+    if (mAdditionalData)
+        result.m_AdditionalData = dictionaryToJsonChar(mAdditionalData);
+    result.m_isActive = mIsActive;
     
     s3eEdkCallbacksEnqueue(S3E_DEVICE_GAMETHRIVE,
                            S3E_GAMETHRIVE_CALLBACK_NOTIFICATION_RECEIVED,
@@ -134,26 +130,24 @@ void processNotificationOpened(NSDictionary* messageData, BOOL isActive) {
 @end
 
 
-s3eResult s3eGameThriveInit_platform()
-{
+s3eResult s3eGameThriveInit_platform() {
     // Add any platform-specific initialisation code here
     return S3E_RESULT_SUCCESS;
 }
 
-void s3eGameThriveTerminate_platform()
-{
+void s3eGameThriveTerminate_platform() {
     // Add any platform-specific termination code here
 }
 
 void GameThriveInitialize_platform(const char* appId, const char* googleProjectNumber, GameThriveNotificationReceivedCallbackFn callbackFn, s3eBool autoRegister) {
-    
-    gameThrive = [[GameThrive alloc] init:CreateNSString(appId) autoRegister:autoRegister];
-    
     // Register Callback
     EDK_CALLBACK_REG(GAMETHRIVE, NOTIFICATION_RECEIVED, (s3eCallback)callbackFn, NULL, false);
     
-    if (launchDict)
-        processNotificationOpened(launchDict, false);
+    initGameThriveObject(nil, appId, autoRegister);
+    marmInitDone = true;
+    
+    if (mAdditionalData)
+        processNotificationOpened();
 }
 
 void GameThriveSendTag_platform(const char* key, const char* value) {
@@ -204,11 +198,11 @@ void GameThriveGetIdsAvailable_platform(GameThriveIdsAvailableCallbackFn callbac
 }
 
 void GameThriveOnResume_platform() {
-    [gameThrive onFocus:@"resume"];
+    //[gameThrive onFocus:@"resume"];
 }
 
 void GameThriveOnPause_platform() {
-    [gameThrive onFocus:@"suspend"];
+    //[gameThrive onFocus:@"suspend"];
 }
 
 void GameThriveRegisterForPushNotifications_platform() {

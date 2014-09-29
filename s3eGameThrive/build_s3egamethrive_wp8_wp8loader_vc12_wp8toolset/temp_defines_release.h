@@ -1,0 +1,42 @@
+#ifndef I3D_OS_WP8
+#   define I3D_OS_WP8 1
+#endif
+#ifndef I3D_PLATFORM_WP8LOADER
+#   define I3D_PLATFORM_WP8LOADER 1
+#endif
+#ifndef IW_ASSERTION_CHANNEL_GAMETHRIVE
+#   define IW_ASSERTION_CHANNEL_GAMETHRIVE 1
+#endif
+#ifndef IW_MKF_EDK
+#   define IW_MKF_EDK 1
+#endif
+#ifndef IW_MKF_S3EGAMETHRIVE_BUILD
+#   define IW_MKF_S3EGAMETHRIVE_BUILD 1
+#endif
+#ifndef IW_MKF_S3EGAMETHRIVE_WP8_CS
+#   define IW_MKF_S3EGAMETHRIVE_WP8_CS 1
+#endif
+#ifndef IW_PLATFORM_WP8LOADER
+#   define IW_PLATFORM_WP8LOADER 1
+#endif
+#ifndef IW_SDK
+#   define IW_SDK 1
+#endif
+#ifndef IW_TRACE_CHANNEL_GAMETHRIVE
+#   define IW_TRACE_CHANNEL_GAMETHRIVE 1
+#endif
+#ifndef IW_TRACE_CHANNEL_GAMETHRIVE_VERBOSE
+#   define IW_TRACE_CHANNEL_GAMETHRIVE_VERBOSE 2
+#endif
+#ifndef S3E_BUILD_EXT
+#   define S3E_BUILD_EXT 1
+#endif
+#ifndef S3E_EXT_GAMETHRIVE
+#   define S3E_EXT_GAMETHRIVE 1
+#endif
+#ifndef WIN8_PHONE_PLATFORM
+#   define WIN8_PHONE_PLATFORM 1
+#endif
+#ifndef WIN8_PLATFORM
+#   define WIN8_PLATFORM 1
+#endif

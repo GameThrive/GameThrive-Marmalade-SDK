@@ -1,0 +1,1 @@
+VC12_WP81TOOLSET;build_gamethriveexample_vc12_wp81toolset;

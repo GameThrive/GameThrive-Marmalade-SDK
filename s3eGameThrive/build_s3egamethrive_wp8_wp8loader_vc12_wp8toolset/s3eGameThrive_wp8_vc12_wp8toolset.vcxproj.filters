@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Extensions\GameThrive\docs">
+    </Filter>
+    <Filter Include="(s3eGameThrive_wp8_cs)">
+    </Filter>
+    <Filter Include="edk">
+    </Filter>
+    <Filter Include="edk\h">
+    </Filter>
+    <Filter Include="Extensions\GameThrive">
+    </Filter>
+    <Filter Include="Extensions\GameThrive\h">
+    </Filter>
+    <Filter Include="Extensions">
+    </Filter>
+    <Filter Include="edk\S3E API">
+    </Filter>
+    <Filter Include="Extensions\GameThrive\source">
+    </Filter>
+    <Filter Include="'generated files'">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/wp8/AssemblyInfo.cs">
+      <Filter>(s3eGameThrive_wp8_cs)</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/edk/edk.mkf">
+      <Filter>edk</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/edk/builder/edk_build.py">
+      <Filter>Extensions\GameThrive</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/wp8/s3eGameThrive.cs">
+      <Filter>(s3eGameThrive_wp8_cs)</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/interface/s3eGameThrive.defines.txt">
+      <Filter>Extensions\GameThrive\docs</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3eGameThrive.s4e">
+      <Filter>Extensions\GameThrive</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_build.mkf">
+      <Filter>Extensions\GameThrive</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive_wp8_cs.mkf">
+      <Filter>(s3eGameThrive_wp8_cs)</Filter>
+    </None>
+    <CustomBuild Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/s3eGameThrive_wp8.mkb">
+      <Filter></Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/AirplayVersion.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/MarmaladeVersion.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3e.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eAccelerometer.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eAudio.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCamera.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eClipboard.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCompass.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCompression.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eConfig.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eContacts.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCrypto.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eDebug.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eDevice.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk.h">
+      <Filter>edk\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdkError.h">
+      <Filter>edk\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_android.h">
+      <Filter>edk\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_iphone.h">
+      <Filter>edk\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_osx.h">
+      <Filter>edk\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/edk/h/s3eEdk_windows.h">
+      <Filter>edk\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eExt.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eFile.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eGL.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h/s3eGameThrive_autodefs.h">
+      <Filter>Extensions\GameThrive\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/h/s3eGameThrive_internal.h">
+      <Filter>Extensions\GameThrive\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/source/wp8/s3eGameThrive_shim.h">
+      <Filter>Extensions\GameThrive\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eHash.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eKeyboard.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eLicense.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eLocation.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eMemory.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3ePointer.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSecureStorage.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSocket.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSound.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSoundRecord.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSurface.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eThread.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eTimer.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eTypes.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVersion.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVibra.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVideo.h">
+      <Filter>edk\S3E API</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset/temp_defines_debug.h">
+      <Filter>'generated files'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset/temp_defines_release.h">
+      <Filter>'generated files'</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\generic\s3eGameThrive.cpp">
+      <Filter>Extensions\GameThrive\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\wp8\s3eGameThrive_platform.cpp">
+      <Filter>Extensions\GameThrive\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\generic\s3eGameThrive_register.cpp">
+      <Filter>Extensions\GameThrive\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\wp8\s3eGameThrive_shim.cpp">
+      <Filter>Extensions\GameThrive\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

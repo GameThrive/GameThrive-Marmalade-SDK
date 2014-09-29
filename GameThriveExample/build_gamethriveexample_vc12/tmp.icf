@@ -1,0 +1,4 @@
+# comments and whitespace stripped by deployment tool
+[s3e]
+SysAppVersion=0.0.1
+SysAppCaption="GameThriveExample"

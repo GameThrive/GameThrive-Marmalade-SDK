@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="(libpng)">
+    </Filter>
+    <Filter Include="(libjpeg)">
+    </Filter>
+    <Filter Include="'Marmalade Studio'\iwutil">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'">
+    </Filter>
+    <Filter Include="(libjpeg)\h">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\GL\GLES 1.x">
+    </Filter>
+    <Filter Include="Extensions\GameThrive">
+    </Filter>
+    <Filter Include="Source">
+    </Filter>
+    <Filter Include="(libpng)\h">
+    </Filter>
+    <Filter Include="(zlib)">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\stdc headers\c++">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\Extensions">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\stdc headers\sys">
+    </Filter>
+    <Filter Include="'Marmalade Studio'">
+    </Filter>
+    <Filter Include="Data">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\GL">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\GL\GLES 2.0">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\stdc headers">
+    </Filter>
+    <Filter Include="Extensions">
+    </Filter>
+    <Filter Include="'generated files'">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\GL\EGL">
+    </Filter>
+    <Filter Include="'Marmalade System (S3E)'\GL\GLES 3.0">
+    </Filter>
+    <Filter Include="(zlib)\h">
+    </Filter>
+    <Filter Include="Extensions\GameThrive\interface">
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/algorithm">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.config.txt">
+      <Filter></Filter>
+    </None>
+    <None Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf">
+      <Filter></Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/bitset">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cassert">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cctype">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cerrno">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cfloat">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/climits">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/clocale">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cmath">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/complex">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/csetjmp">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/csignal">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cstdarg">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cstddef">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cstdio">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cstdlib">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cstring">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/ctime">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cwchar">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/cwctype">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/deque">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/exception">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/fstream">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/functional">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/hash_map">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/hash_set">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/iomanip">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/ios">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/iosfwd">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/iostream">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/istream">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/iterator">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/modules/iwutil/iwutil.mkf">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/modules/third_party/libjpeg/libjpeg.mkf">
+      <Filter>(libjpeg)</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/modules/third_party/libpng/libpng.mkf">
+      <Filter>(libpng)</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/limits">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/list">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/locale">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/map">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/memory">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/new">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/notification.wav">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/numeric">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/ostream">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/pthread_alloc">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/queue">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/rope">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/s3e.config.txt">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/s3e.icf">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/s3e.mkf">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/interface/s3eGameThrive.defines.txt">
+      <Filter>Extensions\GameThrive\interface</Filter>
+    </None>
+    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive.mkf">
+      <Filter>Extensions\GameThrive</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/set">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/slist">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/sstream">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/stack">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/stdexcept">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/stdio_streambuf">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/streambuf">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/string">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/strstream">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/typeinfo">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/utility">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/valarray">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/s3e/h/std/c++/vector">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </None>
+    <None Include="c:/marmalade/7.4/modules/third_party/zlib/zlib.mkf">
+      <Filter>(zlib)</Filter>
+    </None>
+    <CustomBuild Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb">
+      <Filter></Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/AirplayVersion.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwAllocator.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwArray.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwAutoFile.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwBuffer.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwChar.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwClassFactory.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwCopyingPtr.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwCore.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwDebug.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwDivTable.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwDivide.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwEvent.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwFibre.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwFile.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwHashString.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwImage.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwImageHelper.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwKeymap.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwList.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwManaged.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwManagedList.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwMath.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwMemBucket.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwMemBucketHelpers.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwMemManagerDL.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwMemory.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwMenu.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwOptimiseARM.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwOptimiseSize.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwOptimiseSpeed.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwOptimiseThumb.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwPath.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwProfileMenu.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwRandom.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwResource.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwRuntime.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwSerialise.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwSingleton.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwString.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwTextParseable.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwTextParser.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwTextParserITX.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwTypes.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwUTF8.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwUncopyable.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwUtil.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwUtilInitTerm.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwVariableBitField.h">
+      <Filter>'Marmalade Studio'\iwutil</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/MarmaladeVersion.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/alloca.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/assert.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/byteswap.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/cderror.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/cdjpeg.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/ctype.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/dir.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/dirent.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/dlfcn.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/EGL/egl.h">
+      <Filter>'Marmalade System (S3E)'\GL\EGL</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES/egl.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 1.x</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/EGL/eglext.h">
+      <Filter>'Marmalade System (S3E)'\GL\EGL</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/EGL/eglplatform.h">
+      <Filter>'Marmalade System (S3E)'\GL\EGL</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/endian.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/errno.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/exception.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/fcntl.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/file.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/float.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/fnmatch.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/fstream.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/getopt.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES/gl.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 1.x</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES2/gl2.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 2.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES2/gl2ext.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 2.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES2/gl2extimg.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 2.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES2/gl2platform.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 2.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES3/gl3.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 3.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES3/gl3ext.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 3.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES3/gl3platform.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 3.0</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES/glext.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 1.x</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/glob.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/GLES/glplatform.h">
+      <Filter>'Marmalade System (S3E)'\GL\GLES 1.x</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/grp.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/iconv.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/ifaddrs.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/inttypes.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/ioctl.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/iomanip.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/ios.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/iostream.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/ipc.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/istream.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jchuff.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jconfig.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jdct.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jdhuff.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jerror.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jinclude.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jmemsys.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jmorecfg.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jpegint.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jpeglib.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/jversion.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/langinfo.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/libgen.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/limits.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/locale.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/malloc.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/math.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/math_gcc.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/math_rvct.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/mem.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/memory.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/mman.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/msl_string.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/netdb.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/new.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/ostream.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/param.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libpng/h/png.h">
+      <Filter>(libpng)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libpng/h/pngconf.h">
+      <Filter>(libpng)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/poll.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/poll.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/prctl.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/pthread.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/pthread.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/pthread_types.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/pwd.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/resource.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/rlocks.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3e.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eAccelerometer.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eAndroidJNI.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eAudio.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCamera.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eCameraCapture.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eClipboard.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCompass.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCompression.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eConfig.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eContacts.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eCrypto.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eDebug.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eDevice.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eEMail.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eExt.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eFile.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eGL.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h/s3eGameThrive.h">
+      <Filter>Extensions\GameThrive</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eHash.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eIOSBackgroundAudio.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eImagePicker.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eKeyboard.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eLibrary.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eLicense.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eLocation.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eMemory.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eMetrics.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eOSExec.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eOSReadString.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3ePointer.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eSMS.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSecureStorage.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSocket.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSound.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSoundRecord.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eSurface.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eThread.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eTimer.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eTypes.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVersion.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVibra.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eVideo.h">
+      <Filter>'Marmalade System (S3E)'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3eWindow.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/ext/s3edebugHeap.h">
+      <Filter>'Marmalade System (S3E)'\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sched.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/select.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/sem.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/semaphore.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/sendfile.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/setjmp.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/setjmp_win32.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/shm.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sigcontext.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/signal.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/signal.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/signal.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/socket.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/stat.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/stdarg.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/stdbool.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/stddef.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/stdint.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/stdio.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/stdiostream.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/stdlib.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/stl_user_config.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/streambuf.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/string.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/strings.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/strstream.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/syslog.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_debug.h">
+      <Filter>'generated files'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_release.h">
+      <Filter>'generated files'</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/termios.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/time.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/time.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/times.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/libjpeg/h/transupp.h">
+      <Filter>(libjpeg)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/type_traits.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/c++/typeinfo.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/types.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/ucontext.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/uio.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/un.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/unistd.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/utime.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/utsname.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/sys/wait.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/wchar.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/s3e/h/std/wctype.h">
+      <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/zlib/h/zconf.h">
+      <Filter>(zlib)\h</Filter>
+    </ClInclude>
+    <ClInclude Include="c:/marmalade/7.4/modules/third_party/zlib/h/zlib.h">
+      <Filter>(zlib)\h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GameThriveExample.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\s3egamethrive\interface\s3eGameThrive_interface.cpp">
+      <Filter>Extensions\GameThrive\interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\s3eGameThriveManaged.dll
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\s3eGameThriveManaged.pdb
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\GameThriveSDK.dll
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\Newtonsoft.Json.dll
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\s3eGameThriveExtension.winmd
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\s3e_native.winmd
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\s3e_native.dll
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\obj\ARM\Release\s3eGameThriveManaged.csprojResolveAssemblyReference.cache
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\obj\ARM\Release\s3eGameThriveManaged.dll
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\obj\ARM\Release\s3eGameThriveManaged.pdb
+c:\Users\Kasten\Documents\GameThrive\SDK\Marmalade\s3eGameThrive\build_s3egamethrive_wp8_wp8loader_vc12_wp8toolset\Bin\ARM\Release\GameThriveSDK.pdb

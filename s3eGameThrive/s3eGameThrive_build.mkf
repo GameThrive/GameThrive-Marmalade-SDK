@@ -59,6 +59,23 @@ if {{defined I3D_OS_IPHONE}}
     }
 }
 
+if {{defined I3D_OS_WP8}}
+{
+	includepath incoming/wp8
+
+    files
+    {
+        ["h"]
+        (source/wp8)
+        s3eGameThrive_shim.h
+        ["source"]
+        (use_first_found, source/wp8, source/generic)
+		s3eGameThrive_platform.cpp
+        s3eGameThrive_shim.cpp
+    }
+}
+
+
 files
 {
 
