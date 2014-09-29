@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><Deployment AppPlatformVersion="8.0" xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment">
   <DefaultLanguage xmlns="" code="en-US"/>
   <App xmlns="" Author="Marmalade.App author" Description="GameThrive description" Genre="apps.normal" ProductID="{47b35045-f1ac-3e3e-8d5e-662d34848ec7}" Publisher="MyCompany" PublisherID="{11111111-1111-1111-1111-111111111111}" RuntimeType="Silverlight" Title="GameThriveExample" Version="1.0.0.0">
-    <IconPath IsRelative="true" IsResource="false">Assets\WP8_Icon_Or_Tile_99x99_0_0.png</IconPath>
+    <IconPath IsRelative="true" IsResource="false">..\icons\marmlogo128.png</IconPath> <!-- Place holder, correct size is 99x99 -->
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
       <Capability Name="ID_CAP_IDENTITY_DEVICE"/>
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO"/>
+      <Capability Name="ID_CAP_MICROPHONE"/>
       <Capability Name="ID_CAP_PUSH_NOTIFICATION"/>
     </Capabilities>
     <Tasks>
@@ -13,9 +19,9 @@
     <Tokens>
       <PrimaryToken TaskName="_default" TokenID="Marmalade.AppToken">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\WP8_Icon_Or_Tile_159x159_0_1.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">..\icons\Wmarmlogo256.png</SmallImageURI> <!-- Place holder, correct size is 159x159 -->
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\WP8_Icon_Or_Tile_336x336_0_2.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">..\icons\marmlogo512.png</BackgroundImageURI> <!-- Place holder, correct size is 336x336 -->
           <Title></Title>
           <BackContent></BackContent>
           <BackBackgroundImageURI/>

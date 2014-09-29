@@ -4,7 +4,7 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb', '--buildenv=VC12', '--release', '--arm', '--compiler=gcc', '--no-ide', '--make', '--deploy-only']
+cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb', '--deploy-only', '--hub-data', 'C:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/project_GameThriveExample/mkb-windows.txt', '--buildenv=VC12']
 mkb = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb'
 mkf = ['c:\\users\\kasten\\documents\\gamethrive\\sdk\\marmalade\\s3egamethrive\\s3egamethrive.mkf', 'c:\\marmalade\\7.4\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\zlib\\zlib.mkf']
 
@@ -66,12 +66,12 @@ class DefaultConfig(DeployConfig):
     ws81_ext_sdk_manifest_part = []
     ws81_ext_device_capabilities = []
     ws8_ext_sdk_ref = []
-    iphone_extra_string = []
+    iphone_extra_string = ['GTDummyKey,</string><key>UIBackgroundModes</key><array><string>remote-notification</string></array><key>GTDummyKey2</key><string>']
     tizen_so = []
     wp8_ext_native_dll = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/wp8/s3eGameThriveExtension.dll']
     win8_phone_extra_res = []
     win8_store_extra_res = []
-    iphone_link_opts = ['-weak_framework UIKit']
+    iphone_link_opts = ['-weak_framework UIKit', '-weak_framework UIKit']
     ws81_ext_sdk_ref = []
     wp8_extra_res = []
     ws81_ext_native_dll = []
