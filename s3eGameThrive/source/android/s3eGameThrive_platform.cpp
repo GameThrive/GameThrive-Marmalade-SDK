@@ -132,8 +132,13 @@ void GameThriveInitialize_platform(const char* appId, const char* googleProjectN
 }
 
 void NotificationReceivedCallback(JNIEnv* env, jobject _this, jstring m_Message, jstring m_AdditionalData, bool m_isActive) {
-	const char* nativeMessageStr = env->GetStringUTFChars(m_Message, 0);
-	const char* nativeAdditionalDataStr = env->GetStringUTFChars(m_AdditionalData, 0);
+	const char* nativeMessageStr = NULL;
+	const char* nativeAdditionalDataStr = NULL;
+	
+	if (m_Message != NULL)
+		nativeMessageStr = env->GetStringUTFChars(m_Message, 0);
+	if (m_AdditionalData != NULL)
+		nativeAdditionalDataStr = env->GetStringUTFChars(m_AdditionalData, 0);
 	
 	GameThriveNotificationReceivedResult result;
 	result.m_Message = nativeMessageStr;
