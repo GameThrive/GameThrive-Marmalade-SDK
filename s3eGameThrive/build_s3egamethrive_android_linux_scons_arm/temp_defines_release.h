@@ -19,9 +19,6 @@
 #ifndef IW_MKF_S3EGAMETHRIVE_BUILD
 #   define IW_MKF_S3EGAMETHRIVE_BUILD 1
 #endif
-#ifndef IW_MKF_S3E_DEFAULT
-#   define IW_MKF_S3E_DEFAULT 1
-#endif
 #ifndef IW_PLATFORM_LINUX
 #   define IW_PLATFORM_LINUX 1
 #endif

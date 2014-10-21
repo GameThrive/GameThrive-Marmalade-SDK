@@ -72,6 +72,7 @@ libraries_rvct_d = SplitN(r'''
 
 extra_objects = SplitN(r'''
 /Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GameThrive.o
+/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/HGTJailbreakDetection.o
 /Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GTTrackPlayerPurchase.o
 /Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GTHTTPClient.o
 ''')

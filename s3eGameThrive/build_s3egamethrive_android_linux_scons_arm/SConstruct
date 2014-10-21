@@ -13,11 +13,11 @@ from os.path import join
 
 SetOption("implicit_cache" ,1)
 
-target_name = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/android/libGameThrive.so'
-target_name_debug = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/android/libGameThrive_d.so'
-target_name_rvct = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/android/libGameThrive.so'
-target_name_debug_rvct = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/android/libGameThrive_d.so'
-sdk_root = 'c:/marmalade/7.4'
+target_name = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/extension/lib/android/libGameThrive.so'
+target_name_debug = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/extension/lib/android/libGameThrive_d.so'
+target_name_rvct = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/extension/lib/android/libGameThrive.so'
+target_name_debug_rvct = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/extension/lib/android/libGameThrive_d.so'
+sdk_root = 'c:/marmalade/7.3'
 
 scons_version = SCons.__version__.split(".")[:2]
 scons_version = [int(x) for x in scons_version]
@@ -46,11 +46,11 @@ def SplitN(str):
 includes = SplitN(r'''
 ../source/h
 ../h
-c:/marmalade/7.4/s3e/edk/h
-c:/marmalade/7.4/s3e/h
-c:/marmalade/7.4/s3e/h/ext
-c:/marmalade/7.4/modules/iwutil/h
-c:/marmalade/7.4/modules/iwcore/h
+c:/marmalade/7.3/s3e/edk/h
+c:/marmalade/7.3/s3e/h
+c:/marmalade/7.3/s3e/h/ext
+c:/marmalade/7.3/modules/iwutil/h
+c:/marmalade/7.3/modules/iwcore/h
 c:/Program Files (x86)/Android/android-ndk/sources/cxx-stl/gnu-libstdc++/4.8/include
 c:/Program Files (x86)/Android/android-ndk/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi/include
 c:/Program Files (x86)/Android/android-ndk/platforms/android-14/arch-arm/usr/include
@@ -101,7 +101,7 @@ extra_objects = SplitN(r'''
 ''')
 
 libpath = SplitN(r'''
-c:/marmalade/7.4/s3e/edk/lib/android
+c:/marmalade/7.3/s3e/edk/lib/android
 c:/Program Files (x86)/Android/android-ndk/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi
 C:/Program Files (x86)/Android/android-ndk/platforms/android-14/arch-arm/usr/lib
 ''')
@@ -134,7 +134,7 @@ source_flags = {
 
 # Environment variables set by the mkb system
 export_map = {
-    'EDK_BUILDER' : 'c:\\marmalade\\7.4/s3e/edk/builder',
+    'EDK_BUILDER' : 'c:\\marmalade\\7.3/s3e/edk/builder',
     'GCC_THUMB_SUPPORT' : 'NO',
 }
 
@@ -273,11 +273,11 @@ else:
     env.Append(LINKFLAGS=['-Wl,-Bsymbolic', '-Wl,--no-undefined', '--sysroot="C:/Program', 'Files', '(x86)/Android/android-ndk\\platforms\\android-14/arch-arm"', '-Wl,--gc-sections', '-Wl,--as-needed', '-mthumb-interwork'])
     if env['debug']:
         env.Append(CCFLAGS=['-g', '-O0', '-include', 'temp_defines_debug.h'])
-        env.Append(LINKFLAGS=['-Wl,-Map="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/android/libGameThrive_d.map"'])
+        env.Append(LINKFLAGS=['-Wl,-Map="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/extension/lib/android/libGameThrive_d.map"'])
         env.Append(PLFLAGS=[])
     else:
         env.Append(CCFLAGS=['-O3', '-include', 'temp_defines_release.h'])
-        env.Append(LINKFLAGS=['-Wl,-Map="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/android/libGameThrive.map"'])
+        env.Append(LINKFLAGS=['-Wl,-Map="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/extension/lib/android/libGameThrive.map"'])
     env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-Wno-psabi', '-fvisibility=hidden', '-fno-short-enums', '-Wall', '-fomit-frame-pointer', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-save-temps', '-ffunction-sections', '-mthumb-interwork'])
     env.Append(CFLAGS=['-std=gnu99'])
     env.Append(CXXFLAGS=['-fno-exceptions'])
