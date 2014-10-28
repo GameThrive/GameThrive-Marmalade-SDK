@@ -1,7 +1,0 @@
-GameThrive Marmalade Push Notification extension
-===============
-
-GameThrive is a free push notification service for mobile apps. This extension makes it easy to integrate your Marmalade game with GameThrive.
-
-See http://docs.gamethrive.com/article/35-overview-using-gamethrive-in-your-marmalade-sdk-game for setup documentation.
-See https://github.com/GameThrive/GameThrive-Marmalade-SDK/blob/master/API.mdown for GameThrive API documentation.
