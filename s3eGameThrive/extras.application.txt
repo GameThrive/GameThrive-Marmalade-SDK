@@ -10,3 +10,17 @@
 	</intent-filter>
 </receiver>
 <service android:name="com.gamethrive.GcmIntentService" />
+
+
+<amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false" xmlns:amazon="http://schemas.amazon.com/apk/res/android" />
+<service android:name="com.gamethrive.ADMMessageHandler" android:exported="false" />
+<receiver
+	android:name="com.gamethrive.ADMMessageHandler$Receiver"
+	android:permission="com.amazon.device.messaging.permission.SEND" >
+
+	<intent-filter>
+	  <action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+	  <action android:name="com.amazon.device.messaging.intent.RECEIVE" />
+	  <category android:name="${PACKAGENAME}" />
+	</intent-filter>
+</receiver>

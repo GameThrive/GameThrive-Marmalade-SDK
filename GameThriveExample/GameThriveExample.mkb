@@ -22,3 +22,8 @@ deployments
 	# For Android custom notification sound
 	android-external-res="android/res"
 }
+
+assets
+{
+	android/assets/api_key.txt
+}

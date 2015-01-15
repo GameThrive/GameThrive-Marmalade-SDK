@@ -22,18 +22,18 @@ assets = deploy_config.assets
 class HubConfig(deploy_config.DefaultConfig):
     android_icon_group = {}
     android_install_location = 1
-    android_pkgname = r"com.GameThrive.GameThriveExample"
-    icon = r"C:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/icons"
+    android_pkgname = r"com.hiptic.gamethriveexample"
+    icon = r"C:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/icons"
     assets = assets["Default"]
-    config = [r"C:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf"]
-    name = r"GameThriveExample"
-    caption = r"GameThriveExample"
-    provider = r"GameThrive"
-    copyright = r"(C) GameThrive"
+    config = [ur"C:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf"]
+    name = ur"GameThriveExample"
+    caption = ur"GameThriveExample"
+    provider = ur"Josh"
+    copyright = ur"(C) Josh"
     version = [0, 0, 1]
-    android_keystore = r"C:/Users/Kasten/.android/debug.keystore"
+    android_keystore = r"C:/Users/Josh/.android/debug.keystore"
     android_storepass = r"android"
-    android_aliasname = r"androiddebugkey"
+    android_aliasname = r"android"
     android_keypass = r"android"
     pass
 

@@ -28,6 +28,9 @@
 #ifndef IW_MKF_S3EGAMETHRIVE
 #   define IW_MKF_S3EGAMETHRIVE 1
 #endif
+#ifndef IW_MKF_S3E_DEFAULT
+#   define IW_MKF_S3E_DEFAULT 1
+#endif
 #ifndef IW_MKF_ZLIB
 #   define IW_MKF_ZLIB 1
 #endif

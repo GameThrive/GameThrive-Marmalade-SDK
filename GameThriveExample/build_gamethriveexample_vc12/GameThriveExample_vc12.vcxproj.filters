@@ -41,6 +41,8 @@
     </Filter>
     <Filter Include="'generated files'">
     </Filter>
+    <Filter Include="(s3e-default)">
+    </Filter>
     <Filter Include="'Marmalade System (S3E)'\GL\EGL">
     </Filter>
     <Filter Include="'Marmalade System (S3E)'\GL\GLES 3.0">
@@ -54,10 +56,10 @@
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/algorithm">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
-    <None Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.config.txt">
+    <None Include="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.config.txt">
       <Filter></Filter>
     </None>
-    <None Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf">
+    <None Include="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf">
       <Filter></Filter>
     </None>
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/bitset">
@@ -183,7 +185,7 @@
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/new">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
-    <None Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/notification.wav">
+    <None Include="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/notification.wav">
       <Filter>Data</Filter>
     </None>
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/numeric">
@@ -201,6 +203,9 @@
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/rope">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
+    <None Include="c:/marmalade/7.4/s3e/s3e-default.mkf">
+      <Filter>(s3e-default)</Filter>
+    </None>
     <None Include="c:/marmalade/7.4/s3e/s3e.config.txt">
       <Filter>'Marmalade System (S3E)'</Filter>
     </None>
@@ -210,10 +215,10 @@
     <None Include="c:/marmalade/7.4/s3e/s3e.mkf">
       <Filter>'Marmalade System (S3E)'</Filter>
     </None>
-    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/interface/s3eGameThrive.defines.txt">
+    <None Include="c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/interface/s3eGameThrive.defines.txt">
       <Filter>Extensions\GameThrive\interface</Filter>
     </None>
-    <None Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive.mkf">
+    <None Include="c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/s3egamethrive.mkf">
       <Filter>Extensions\GameThrive</Filter>
     </None>
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/set">
@@ -258,7 +263,7 @@
     <None Include="c:/marmalade/7.4/modules/third_party/zlib/zlib.mkf">
       <Filter>(zlib)</Filter>
     </None>
-    <CustomBuild Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb">
+    <CustomBuild Include="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb">
       <Filter></Filter>
     </CustomBuild>
   </ItemGroup>
@@ -710,7 +715,7 @@
     <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eGL.h">
       <Filter>'Marmalade System (S3E)'</Filter>
     </ClInclude>
-    <ClInclude Include="c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h/s3eGameThrive.h">
+    <ClInclude Include="c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/h/s3eGameThrive.h">
       <Filter>Extensions\GameThrive</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.4/s3e/h/s3eHash.h">
@@ -872,10 +877,10 @@
     <ClInclude Include="c:/marmalade/7.4/s3e/h/std/syslog.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_debug.h">
+    <ClInclude Include="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_debug.h">
       <Filter>'generated files'</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_release.h">
+    <ClInclude Include="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_release.h">
       <Filter>'generated files'</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.4/s3e/h/std/termios.h">

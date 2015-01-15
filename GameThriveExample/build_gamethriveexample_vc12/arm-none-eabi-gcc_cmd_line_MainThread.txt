@@ -1,8 +1,8 @@
 -c
-c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.cpp
+c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.cpp
 -o
-Release_GameThriveExample_vc12_gcc_arm//GameThriveExample.obj
--Ic:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/h
+Debug_GameThriveExample_vc12_gcc_arm//GameThriveExample.obj
+-Ic:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/h
 -Ic:/marmalade/7.4/modules/iwutil/h
 -Ic:/marmalade/7.4/modules/third_party/libjpeg/h
 -Ic:/marmalade/7.4/modules/third_party/zlib/h
@@ -36,10 +36,12 @@ Release_GameThriveExample_vc12_gcc_arm//GameThriveExample.obj
 -fvisibility=hidden
 -nostdinc
 -fPIC
--O3
+-g
+-O0
+-gdwarf-2
 -D__S3E_CL_WRAPPER
 -include
-c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_release.h
+c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/temp_defines_debug.h
 -Wno-reorder
 -fvisibility-inlines-hidden
 -fno-exceptions

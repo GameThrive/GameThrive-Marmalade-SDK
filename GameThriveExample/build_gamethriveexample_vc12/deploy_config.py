@@ -4,9 +4,9 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb', '--deploy-only', '--hub-data', 'C:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/project_GameThriveExample/mkb-windows.txt', '--buildenv=VC12']
-mkb = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb'
-mkf = ['c:\\users\\kasten\\documents\\gamethrive\\sdk\\marmalade\\s3egamethrive\\s3egamethrive.mkf', 'c:\\marmalade\\7.4\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\zlib\\zlib.mkf']
+cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb', '--deploy-only', '--hub-data', 'C:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/project_GameThriveExample/mkb-windows.txt', '--buildenv=VC12']
+mkb = 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExample.mkb'
+mkf = ['c:\\marmalade\\7.4\\s3e\\s3e-default.mkf', 'c:\\users\\josh\\documents\\gamethrive\\sdk\\marmalade\\s3egamethrive\\s3egamethrive.mkf', 'c:\\marmalade\\7.4\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\zlib\\zlib.mkf']
 
 class DeployConfig(object):
     pass
@@ -16,7 +16,7 @@ class DeployConfig(object):
 assets = {}
 
 assets['Default'] = [
-    ('c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample\data', '.', 0),
+    ('c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/android/assets/api_key.txt', 'api_key.txt', 0),
 ]
 
 ######### DEFAULT CONFIG #############
@@ -29,35 +29,36 @@ class DefaultConfig(DeployConfig):
     caption = 'GameThriveExample'
     long_caption = 'GameThriveExample'
     version = [0, 0, 1]
-    config = ['c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf']
-    data_dir = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data'
+    config = ['c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf']
+    data_dir = 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data'
+    mkb_dir = 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample'
     iphone_link_lib = ['s3eGameThrive']
     osx_ext_dll = []
     wp81_extra_pri = []
     ws8_ext_capabilities = []
-    android_external_res = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/res', 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/android/res']
+    android_external_res = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/res', 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/android/res']
     win32_ext_dll = []
     wp8_ext_capabilities = []
+    ws8_extra_res = []
     ws81_ext_managed_dll = []
-    iphone_link_libdir = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/iphone']
+    iphone_link_libdir = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/iphone']
     wp81_ext_capabilities = []
-    android_extra_application_manifest = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/extras.application.txt']
+    android_extra_application_manifest = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/extras.application.txt']
     ws8_ext_native_dll = []
     android_external_assets = []
     blackberry_extra_descriptor = []
-    ws8_extra_res = []
-    android_extra_manifest = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/extras.manifest.txt', 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExtraManifest.xml']
+    android_extra_manifest = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/extras.manifest.txt', 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveExtraManifest.xml']
     wp81_ext_sdk_ref = []
     iphone_link_libdirs = []
     wp81_ext_device_capabilities = []
-    wp8_custom_manifest = 'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveCustomWP8Manifest.xml'
+    wp8_custom_manifest = 'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/GameThriveCustomWP8Manifest.xml'
     wp8_custom_manifest_fill = 0
     linux_ext_lib = []
     ws8_ext_managed_dll = []
     ws8_ext_sdk_manifest_part = []
     ws8_ext_device_capabilities = []
     ws81_extra_pri = []
-    android_external_jars = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/GameThriveSDK.jar', 'c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/android/s3eGameThrive.jar', 'c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/google-play-services.jar', 'c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/android-support-v4.jar']
+    android_external_jars = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/GameThriveSDK.jar', 'c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/android/s3eGameThrive.jar', 'c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/google-play-services.jar', 'c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/android/android-support-v4.jar']
     win8_winrt_extra_res = []
     wp81_ext_sdk_manifest_part = []
     android_supports_gl_texture = []
@@ -68,7 +69,7 @@ class DefaultConfig(DeployConfig):
     ws8_ext_sdk_ref = []
     iphone_extra_string = ['GTDummyKey,</string><key>UIBackgroundModes</key><array><string>remote-notification</string></array><key>GTDummyKey2</key><string>']
     tizen_so = []
-    wp8_ext_native_dll = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/wp8/s3eGameThriveExtension.dll']
+    wp8_ext_native_dll = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/wp8/s3eGameThriveExtension.dll']
     win8_phone_extra_res = []
     win8_store_extra_res = []
     iphone_link_opts = ['-weak_framework UIKit', '-weak_framework UIKit']
@@ -76,8 +77,9 @@ class DefaultConfig(DeployConfig):
     wp8_extra_res = []
     ws81_ext_native_dll = []
     ws8_extra_pri = []
-    wp8_ext_managed_dll = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8/GameThriveSDK.dll', 'c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8/Newtonsoft.Json.dll', 'c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/wp8/s3eGameThriveManaged.dll']
-    android_so = ['c:/users/kasten/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/android/libGameThrive.so']
+    wp8_ext_managed_dll = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8/GameThriveSDK.dll', 'c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/incoming/wp8/Newtonsoft.Json.dll', 'c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/wp8/s3eGameThriveManaged.dll']
+    android_extra_packages = []
+    android_so = ['c:/users/josh/documents/gamethrive/sdk/marmalade/s3egamethrive/lib/android/libGameThrive.so']
     wp8_ext_sdk_ref = []
     osx_extra_res = []
     ws81_extra_res = []
@@ -86,40 +88,40 @@ class DefaultConfig(DeployConfig):
     iphone_link_libs = []
     target = {
          'gcc_x86' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_x86/GameThriveExample.so',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_x86/GameThriveExample.so',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_x86/GameThriveExample.so',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_x86/GameThriveExample.so',
                  },
          'gcc_x86_tizen' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_x86_tizen/GameThriveExample.s86',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_x86_tizen/GameThriveExample.s86',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_x86_tizen/GameThriveExample.s86',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_x86_tizen/GameThriveExample.s86',
                  },
          'firefoxos' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_firefoxos/GameThriveExample.js',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_firefoxos/GameThriveExample.js',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_firefoxos/GameThriveExample.js',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_firefoxos/GameThriveExample.js',
                  },
          'mips_gcc' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
                  },
          'arm_gcc' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_arm/GameThriveExample.s3e',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_arm/GameThriveExample.s3e',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_arm/GameThriveExample.s3e',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_arm/GameThriveExample.s3e',
                  },
          'mips' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_mips/GameThriveExample.so',
                  },
          'gcc_x86_android' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_x86_android/GameThriveExample.so',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_x86_android/GameThriveExample.so',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_gcc_x86_android/GameThriveExample.so',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_gcc_x86_android/GameThriveExample.so',
                  },
          'arm' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_arm/GameThriveExample.s3e',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_arm/GameThriveExample.s3e',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_arm/GameThriveExample.s3e',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_arm/GameThriveExample.s3e',
                  },
          'x86' : {
-                   'debug'   : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_x86/GameThriveExample.s86',
-                   'release' : r'c:/Users/Kasten/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_x86/GameThriveExample.s86',
+                   'debug'   : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Debug_GameThriveExample_VC12_x86/GameThriveExample.s86',
+                   'release' : r'c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_vc12/Release_GameThriveExample_VC12_x86/GameThriveExample.s86',
                  },
         }
     arm_arch = ''

@@ -1,9 +1,0 @@
---dll="/Users/hiptic/Documents/GameThrive/SDK/Marmalade/GameThriveExample/build_gamethriveexample_xcode/build/Debug/GameThriveExample.s86"
---data="/Users/hiptic/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data"
---checks3edir="1"
---app-icf1="/Users/hiptic/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf"
---config-txt1="/Applications/Marmalade.app/Contents/modules/iwutil/docs/iwutil.config.txt"
---config-txt2="/Applications/Marmalade.app/Contents/s3e/s3e.config.txt"
---config-txt3="/Users/hiptic/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.config.txt"
---config-txt4="/Applications/Marmalade.app/Contents/s3e/s3e.config.txt"
---s3e-dir=/Applications/Marmalade.app/Contents/s3e
