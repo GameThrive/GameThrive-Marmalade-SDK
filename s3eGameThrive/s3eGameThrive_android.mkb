@@ -9,8 +9,8 @@ define S3E_ANDROID
 options
 {
     dll
-    output-name="lib/android/libGameThrive.so"
-    output-name-debug="lib/android/libGameThrive_d.so"
+    output-name="lib/android/libs3eGameThrive.so"
+    output-name-debug="lib/android/libs3eGameThrive_d.so"
 }
 define S3E_BUILD_EXT
 

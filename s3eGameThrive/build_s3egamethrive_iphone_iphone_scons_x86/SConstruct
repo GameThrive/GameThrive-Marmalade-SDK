@@ -72,6 +72,8 @@ libraries_rvct_d = SplitN(r'''
 
 extra_objects = SplitN(r'''
 /Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GameThrive.o
+/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/HGTJailbreakDetection.o
+/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GTTrackPlayerPurchase.o
 /Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/incoming/iphone/GTHTTPClient.o
 ''')
 
@@ -108,7 +110,8 @@ source_flags = {
 # Environment variables set by the mkb system
 export_map = {
     'EDK_BUILDER' : '/Applications/Marmalade.app/Contents/s3e/edk/builder',
-    'IPHONEOS_DEPLOYMENT_TARGET' : '4.3',
+    'GCC_THUMB_SUPPORT' : 'NO',
+    'IPHONEOS_DEPLOYMENT_TARGET' : '5.1',
 }
 
 exports = Split("""
@@ -146,7 +149,7 @@ for export in exports:
 
 arch = "X86"
 
-gcc_variants = ["gcc", "arm-none-linux-gnueabi-gcc", "arm-linux-gnu-gcc", "arm-none-eabi-gcc", 'mipsel-linux-uclibc-gcc', 'mips-linux-gnu-gcc', 'clang', 'i686-linux-android-gcc', 'i386-linux-gnueabi-gcc']
+gcc_variants = ["gcc", "arm-none-linux-gnueabi-gcc", "arm-linux-gnu-gcc", "arm-none-eabi-gcc", "aarch64-none-elf-gcc", 'mipsel-linux-uclibc-gcc', 'mips-linux-gnu-gcc', 'clang', 'i686-linux-android-gcc', 'i386-linux-gnueabi-gcc']
 
 #
 # Figure out what compiler to use
@@ -229,7 +232,7 @@ if compiler == "rvct":
 
 if 1:
 
-    env.Append(LINKFLAGS=['-m32', '-dead_strip', '-Wl,-rpath,/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.0.sdk', '-dead_strip', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.0.sdk', '-mmacosx-version-min=10.7'])
+    env.Append(LINKFLAGS=['-m32', '-dead_strip', '-Wl,-rpath,/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk', '-dead_strip', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk', '-mmacosx-version-min=10.7'])
     if env['debug']:
         env.Append(CCFLAGS=['-g', '-O0', '-include', 'temp_defines_debug.h'])
         env.Append(LINKFLAGS=['-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/i386/libs3eGameThrive_d.map'])
@@ -237,7 +240,7 @@ if 1:
     else:
         env.Append(CCFLAGS=['-O3', '-include', 'temp_defines_release.h'])
         env.Append(LINKFLAGS=['-Wl,-S', '-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/i386/libs3eGameThrive.map'])
-    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fno-builtin', '-fno-builtin', '-Wall', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-Wno-format-security', '-m32', '-fasynchronous-unwind-tables', '-fno-strict-overflow', '-mmacosx-version-min=10.7', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.0.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2'])
+    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fno-builtin', '-fno-builtin', '-Wall', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-Wno-format-security', '-m32', '-fasynchronous-unwind-tables', '-fno-strict-overflow', '-mmacosx-version-min=10.7', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2'])
     env.Append(CFLAGS=['-std=gnu99'])
     env.Append(CXXFLAGS=['-fno-exceptions', '-fvisibility-inlines-hidden'])
     env['ARFLAGS'] = ['rc']

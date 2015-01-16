@@ -111,7 +111,7 @@ source_flags = {
 export_map = {
     'EDK_BUILDER' : '/Applications/Marmalade.app/Contents/s3e/edk/builder',
     'GCC_THUMB_SUPPORT' : 'NO',
-    'IPHONEOS_DEPLOYMENT_TARGET' : '4.3',
+    'IPHONEOS_DEPLOYMENT_TARGET' : '5.1',
 }
 
 exports = Split("""
@@ -149,7 +149,7 @@ for export in exports:
 
 arch = "ARM"
 
-gcc_variants = ["gcc", "arm-none-linux-gnueabi-gcc", "arm-linux-gnu-gcc", "arm-none-eabi-gcc", 'mipsel-linux-uclibc-gcc', 'mips-linux-gnu-gcc', 'clang', 'i686-linux-android-gcc', 'i386-linux-gnueabi-gcc']
+gcc_variants = ["gcc", "arm-none-linux-gnueabi-gcc", "arm-linux-gnu-gcc", "arm-none-eabi-gcc", "aarch64-none-elf-gcc", 'mipsel-linux-uclibc-gcc', 'mips-linux-gnu-gcc', 'clang', 'i686-linux-android-gcc', 'i386-linux-gnueabi-gcc']
 
 #
 # Figure out what compiler to use
@@ -170,11 +170,11 @@ else:
 
 
 paths = [
-    r'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin',
     r'/usr/bin',
     r'/Applications/Xcode.app/Contents/Developer/usr/bin',
     r'/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin',
     r'/opt/local/bin',
+    r'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin',
 ]
 
 path = []
@@ -239,7 +239,7 @@ if compiler == 'rvct':
     else:
         env.Append(CCFLAGS=['-Otime', '-O3', '--preinclude=temp_defines_release.h'])
         env.Append(LINKFLAGS=[])
-    env.Append(CCFLAGS=['--split_sections', '--diag_remark=1,9,111,128,174,177,196,381,550,611,815,1293,1294,1295,1299,1300,1304,3052', '--no_exceptions', '--apcs=/interwork'])
+    env.Append(CCFLAGS=['--split_sections', '--diag_remark=1,9,111,128,174,177,196,381,550,611,815,1293,1294,1295,1299,1300,1304,3052', '--no_exceptions', '--apcs=/interwork', '--apcs=/interwork'])
     env.Append(CFLAGS=[])
     env.Append(CXXFLAGS=['--cpp'])
     env['ARFLAGS'] = ['--create']
@@ -250,7 +250,7 @@ if compiler == 'rvct':
     env['SHCCFLAGS'] = SCons.Util.CLVar('$CCFLAGS -fPIC')
 
 else:
-    env.Append(LINKFLAGS=['-arch', 'armv7', '-dead_strip', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk', '-miphoneos-version-min=4.3'])
+    env.Append(LINKFLAGS=['-arch', 'armv7', '-dead_strip', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk', '-miphoneos-version-min=5.1'])
     if env['debug']:
         env.Append(CCFLAGS=['-g', '-O0', '-include', 'temp_defines_debug.h'])
         env.Append(LINKFLAGS=['-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive_d.map'])
@@ -258,7 +258,7 @@ else:
     else:
         env.Append(CCFLAGS=['-O3', '-include', 'temp_defines_release.h'])
         env.Append(LINKFLAGS=['-Wl,-S', '-Wl,-map', '-Wl,/Users/hiptic/Documents/GameThrive/SDK/Marmalade/s3eGameThrive/lib/iphone/libs3eGameThrive.map'])
-    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fno-builtin', '-Wall', '-fomit-frame-pointer', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-Wno-format-security', '-arch', 'armv7', '-mfpu=vfpv3', '-mfloat-abi=softfp', '-mno-thumb', '-miphoneos-version-min=4.3', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2', '-fPIC'])
+    env.Append(CCFLAGS=['-fsigned-char', '-fno-strict-aliasing', '-fno-builtin', '-Wall', '-fomit-frame-pointer', '-fmessage-length=0', '-Wno-unused', '-Wno-parentheses', '-Wno-format-security', '-arch', 'armv7', '-mfpu=vfpv3', '-mfloat-abi=softfp', '-mno-thumb', '-mno-thumb', '-miphoneos-version-min=5.1', '-isysroot', '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk', '-funsigned-char', '-fvisibility=default', '-gdwarf-2', '-fPIC'])
     env.Append(CFLAGS=['-std=gnu99'])
     env.Append(CXXFLAGS=['-fno-exceptions', '-fvisibility-inlines-hidden'])
     env['ARFLAGS'] = ['rc']

@@ -1,4 +1,10 @@
 #!/usr/bin/env mkb
+
+options
+{
+	module_path=../s3eGameThrive
+}
+
 subproject ../s3eGameThrive/s3eGameThrive.mkf
 
 files
@@ -15,7 +21,10 @@ files
 deployments
 {
     android-extra-manifest=GameThriveExtraManifest.xml
+    android-extra-strings='(gps_app_id, 999)'  ## required by google-play-services.
+
     iphone-link-opts="-weak_framework UIKit"
+
 	wp8-custom-manifest=GameThriveCustomWP8Manifest.xml
 	wp8-custom-manifest-fill=0
 
