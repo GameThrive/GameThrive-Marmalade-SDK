@@ -1,1 +1,0 @@
-VC12_WS81TOOLSET;build_gamethriveexample_vc12_ws81toolset;

@@ -17,14 +17,10 @@ include:
  */
 
 /**
- * @defgroup edkgamethriveapigroup Android Basic Extension API Reference
+ * @defgroup edkgamethriveapigroup GameThrive Extension API Reference
  *
- * This extension has a single function that adds two integers. It is intended as a simple
- * demonstration for making Android extensions.
- *
- * This is an example extension supplied with the EDK. It is included to
- * demonstrate the implementation of an Android functionality and is not intended
- * for use in commercial applications.
+ * GameThrive is a free push notification service for mobile apps.
+ * This extension makes it easy to integrate your Marmalade game with GameThrive.
  *
  * @{
  */

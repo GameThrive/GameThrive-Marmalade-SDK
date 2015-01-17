@@ -48,7 +48,6 @@ if {{defined I3D_OS_IPHONE}}
     {
         ["GameThrive Library"]
         (incoming/iphone)
-        "*.o"
         "*.h"
 
         ["source"]

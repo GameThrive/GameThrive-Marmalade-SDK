@@ -1,2 +1,0 @@
-SCONS;build_gamethriveexample_scons_x86;
-SCONS;build_gamethriveexample_scons_arm;

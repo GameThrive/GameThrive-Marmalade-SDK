@@ -1,9 +1,0 @@
---dll="c:\Users\Josh\Documents\GameThrive\SDK\Marmalade\GameThriveExample\build_gamethriveexample_vc12\Debug_GameThriveExample_VC12_x86\GameThriveExample.s86"
---data="c:\Users\Josh\Documents\GameThrive\SDK\Marmalade\GameThriveExample\data"
---checks3edir="1"
---app-icf1="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.icf"
---config-txt1="c:/Users/Josh/Documents/GameThrive/SDK/Marmalade/GameThriveExample/data/app.config.txt"
---config-txt2="c:/marmalade/7.4/modules/iwutil/docs/iwutil.config.txt"
---config-txt3="c:/marmalade/7.4/s3e/s3e.config.txt"
---config-txt4="c:/marmalade/7.4/s3e\s3e.config.txt"
---s3e-dir=c:/marmalade/7.4/s3e

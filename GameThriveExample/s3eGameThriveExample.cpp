@@ -30,7 +30,7 @@ static void HandleReceivedNotification(GameThriveNotificationReceivedResult* res
 }
 
 S3E_MAIN_DECL int main() {
-	GameThriveInitialize("5eb5a37e-b458-11e3-ac11-000c2940e62c", "703322744261", (GameThriveNotificationReceivedCallbackFn)HandleReceivedNotification, true);
+	GameThriveInitialize("b49e69ca-d0b8-11e3-97bf-c3d1433e8bc1", "703322744261", (GameThriveNotificationReceivedCallbackFn)HandleReceivedNotification, true);
 	s3eDeviceRegister(S3E_DEVICE_PAUSE, &GameThriveSystemPaused, NULL);
 	s3eDeviceRegister(S3E_DEVICE_UNPAUSE, &GameThriveSystemResume, NULL);
 	

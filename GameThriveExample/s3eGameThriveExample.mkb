@@ -10,7 +10,7 @@ subproject ../s3eGameThrive/s3eGameThrive.mkf
 files
 {
     ["Source"]
-    GameThriveExample.cpp
+    s3eGameThriveExample.cpp
 	
 	# iOS and WP8 custom notification sound
 	[Data]
@@ -32,6 +32,7 @@ deployments
 	android-external-res="android/res"
 }
 
+# Required for Amazon ADM push notifications.
 assets
 {
 	android/assets/api_key.txt
