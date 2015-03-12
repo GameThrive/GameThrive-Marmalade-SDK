@@ -78,6 +78,18 @@ static void GameThriveRegisterForPushNotifications_wrap()
     s3eEdkThreadRunOnOS((s3eEdkThreadFunc)GameThriveRegisterForPushNotifications, 0);
 }
 
+static void GameThriveEnableVibrate_wrap(s3eBool enable)
+{
+    IwTrace(GAMETHRIVE_VERBOSE, ("calling s3eGameThrive func on main thread: GameThriveEnableVibrate"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)GameThriveEnableVibrate, 1, enable);
+}
+
+static void GameThriveEnableSound_wrap(s3eBool enable)
+{
+    IwTrace(GAMETHRIVE_VERBOSE, ("calling s3eGameThrive func on main thread: GameThriveEnableSound"));
+    s3eEdkThreadRunOnOS((s3eEdkThreadFunc)GameThriveEnableSound, 1, enable);
+}
+
 #define GameThriveInitialize GameThriveInitialize_wrap
 #define GameThriveSendTag GameThriveSendTag_wrap
 #define GameThriveGetTags GameThriveGetTags_wrap
@@ -87,13 +99,15 @@ static void GameThriveRegisterForPushNotifications_wrap()
 #define GameThriveSystemPaused GameThriveSystemPaused_wrap
 #define GameThriveSystemResume GameThriveSystemResume_wrap
 #define GameThriveRegisterForPushNotifications GameThriveRegisterForPushNotifications_wrap
+#define GameThriveEnableVibrate GameThriveEnableVibrate_wrap
+#define GameThriveEnableSound GameThriveEnableSound_wrap
 
 #endif
 
 void s3eGameThriveRegisterExt()
 {
     /* fill in the function pointer struct for this extension */
-    void* funcPtrs[9];
+    void* funcPtrs[11];
     funcPtrs[0] = (void*)GameThriveInitialize;
     funcPtrs[1] = (void*)GameThriveSendTag;
     funcPtrs[2] = (void*)GameThriveGetTags;
@@ -103,11 +117,13 @@ void s3eGameThriveRegisterExt()
     funcPtrs[6] = (void*)GameThriveSystemPaused;
     funcPtrs[7] = (void*)GameThriveSystemResume;
     funcPtrs[8] = (void*)GameThriveRegisterForPushNotifications;
+    funcPtrs[9] = (void*)GameThriveEnableVibrate;
+    funcPtrs[10] = (void*)GameThriveEnableSound;
 
     /*
      * Flags that specify the extension's use of locking and stackswitching
      */
-    int flags[9] = { 0 };
+    int flags[11] = { 0 };
 
     /*
      * Register the extension

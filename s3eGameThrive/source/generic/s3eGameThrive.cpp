@@ -69,3 +69,11 @@ void GameThriveGetIdsAvailable(GameThriveIdsAvailableCallbackFn callbackFn)
 void GameThriveRegisterForPushNotifications() {
 	GameThriveRegisterForPushNotifications_platform();
 }
+
+void GameThriveEnableVibrate(s3eBool enable) {
+	GameThriveEnableVibrate_platform(enable);
+}
+
+void GameThriveEnableSound(s3eBool enable) {
+	GameThriveEnableSound_platform(enable);
+}

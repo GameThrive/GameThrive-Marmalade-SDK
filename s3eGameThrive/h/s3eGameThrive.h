@@ -89,6 +89,10 @@ int GameThriveSystemResume(void* systemData, void* userData);
 
 void GameThriveRegisterForPushNotifications();
 
+void GameThriveEnableVibrate(s3eBool enable);
+
+void GameThriveEnableSound(s3eBool enable);
+
 S3E_END_C_DECL
 
 /** @} */

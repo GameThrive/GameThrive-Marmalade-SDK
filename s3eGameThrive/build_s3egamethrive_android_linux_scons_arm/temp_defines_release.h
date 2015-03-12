@@ -43,3 +43,13 @@
 #ifndef S3E_EXT_GAMETHRIVE
 #   define S3E_EXT_GAMETHRIVE 1
 #endif
+
+/* including "extra_body" specified by the mkb plugin */
+
+#if !defined I3D_ARCH_32_BIT && !defined I3D_ARCH_64_BIT
+    #if defined I3D_ARCH_AARCH64 || defined I3D_ARCH_AMD64
+        #define I3D_ARCH_64_BIT
+    #else
+        #define I3D_ARCH_32_BIT
+    #endif
+#endif

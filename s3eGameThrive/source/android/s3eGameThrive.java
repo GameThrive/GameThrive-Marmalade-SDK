@@ -83,6 +83,14 @@ class s3eGameThrive implements NotificationOpenedHandler {
 	public void GameThriveOnResume() {
 		gameThrive.onResumed();
 	}
+
+	public void GameThriveEnableVibrate(boolean enable) {
+		gameThrive.enableVibrate(enable);
+	}
+
+	public void GameThriveEnableSound(boolean enable) {
+		gameThrive.enableSound(enable);
+	}
 	
 	public native void NotificationReceivedCallback(String message, String additionalData, boolean isActive);
 	public native void IdsAvailableCallback(String playerID, String pushToken);

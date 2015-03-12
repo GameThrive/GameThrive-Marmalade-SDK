@@ -64,5 +64,9 @@ void GameThriveOnResume_platform();
 
 void GameThriveRegisterForPushNotifications_platform();
 
+void GameThriveEnableVibrate_platform(s3eBool enable);
+
+void GameThriveEnableSound_platform(s3eBool enable);
+
 
 #endif /* !S3EGAMETHRIVE_INTERNAL_H */

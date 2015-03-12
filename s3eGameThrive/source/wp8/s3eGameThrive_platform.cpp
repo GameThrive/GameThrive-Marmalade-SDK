@@ -97,6 +97,14 @@ void GameThriveOnResume_platform() {
 void GameThriveRegisterForPushNotifications_platform() {
 }
 
+void GameThriveEnableVibrate_platform() {
+	// For Android Only
+}
+
+void GameThriveEnableSound_platform() {
+	// For Android Only
+}
+
 
 // The following 3 functions are called from the shim which was called from the .NET CLR
 void NotificationReceivedCallback(const char* additionalData, bool isActive) {

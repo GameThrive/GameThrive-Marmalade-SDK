@@ -31,6 +31,8 @@ typedef       void(*GameThriveGetIdsAvailable_t)(GameThriveIdsAvailableCallbackF
 typedef        int(*GameThriveSystemPaused_t)(void* systemData, void* userData);
 typedef        int(*GameThriveSystemResume_t)(void* systemData, void* userData);
 typedef       void(*GameThriveRegisterForPushNotifications_t)();
+typedef       void(*GameThriveEnableVibrate_t)(s3eBool enable);
+typedef       void(*GameThriveEnableSound_t)(s3eBool enable);
 
 /**
  * struct that gets filled in by s3eGameThriveRegister
@@ -46,6 +48,8 @@ typedef struct s3eGameThriveFuncs
     GameThriveSystemPaused_t m_GameThriveSystemPaused;
     GameThriveSystemResume_t m_GameThriveSystemResume;
     GameThriveRegisterForPushNotifications_t m_GameThriveRegisterForPushNotifications;
+    GameThriveEnableVibrate_t m_GameThriveEnableVibrate;
+    GameThriveEnableSound_t m_GameThriveEnableSound;
 } s3eGameThriveFuncs;
 
 static s3eGameThriveFuncs g_Ext;
@@ -263,6 +267,46 @@ void GameThriveRegisterForPushNotifications()
 #endif
 
     g_Ext.m_GameThriveRegisterForPushNotifications();
+
+#ifdef LOADER_CALL_LOCK
+    s3eDeviceLoaderCallDone(S3E_TRUE, NULL);
+#endif
+
+    return;
+}
+
+void GameThriveEnableVibrate(s3eBool enable)
+{
+    IwTrace(GAMETHRIVE_VERBOSE, ("calling s3eGameThrive[9] func: GameThriveEnableVibrate"));
+
+    if (!_extLoad())
+        return;
+
+#ifdef LOADER_CALL_LOCK
+    s3eDeviceLoaderCallStart(S3E_TRUE, NULL);
+#endif
+
+    g_Ext.m_GameThriveEnableVibrate(enable);
+
+#ifdef LOADER_CALL_LOCK
+    s3eDeviceLoaderCallDone(S3E_TRUE, NULL);
+#endif
+
+    return;
+}
+
+void GameThriveEnableSound(s3eBool enable)
+{
+    IwTrace(GAMETHRIVE_VERBOSE, ("calling s3eGameThrive[10] func: GameThriveEnableSound"));
+
+    if (!_extLoad())
+        return;
+
+#ifdef LOADER_CALL_LOCK
+    s3eDeviceLoaderCallStart(S3E_TRUE, NULL);
+#endif
+
+    g_Ext.m_GameThriveEnableSound(enable);
 
 #ifdef LOADER_CALL_LOCK
     s3eDeviceLoaderCallDone(S3E_TRUE, NULL);

@@ -28,8 +28,15 @@ deployments
 	wp8-custom-manifest=GameThriveCustomWP8Manifest.xml
 	wp8-custom-manifest-fill=0
 
-	# For Android custom notification sound
+	# For Android custom notification sounds and icons
 	android-external-res="android/res"
+
+	# Android launcher icons
+	android-icon-mdpi="android/res/drawable-mdpi/ic_launcher.png"
+	android-icon-hdpi="android/res/drawable-hdpi/ic_launcher.png"
+	android-icon-xhdpi="android/res/drawable-xhdpi/ic_launcher.png"
+	android-icon-xxhdpi="android/res/drawable-xxhdpi/ic_launcher.png"
+	android-icon-xxxhdpi="android/res/drawable-xxxhdpi/ic_launcher.png"
 }
 
 # Required for Amazon ADM push notifications.

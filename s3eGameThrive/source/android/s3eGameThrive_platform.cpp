@@ -29,6 +29,8 @@ static jmethodID g_GameThriveSendPurchase;
 static jmethodID g_GameThriveGetIdsAvailable;
 static jmethodID g_GameThriveOnPause;
 static jmethodID g_GameThriveOnResume;
+static jmethodID g_GameThriveEnableVibrate;
+static jmethodID g_GameThriveEnableSound;
 
 s3eResult s3eGameThriveInit_platform()
 {
@@ -92,6 +94,14 @@ s3eResult s3eGameThriveInit_platform()
 	
 	g_GameThriveOnResume = env->GetMethodID(cls, "GameThriveOnResume", "()V");
     if (!g_GameThriveOnResume)
+        goto fail;
+
+    g_GameThriveEnableVibrate = env->GetMethodID(cls, "GameThriveEnableVibrate", "(Z)V");
+    if (!g_GameThriveEnableVibrate)
+        goto fail;
+
+    g_GameThriveEnableSound = env->GetMethodID(cls, "GameThriveEnableSound", "(Z)V");
+    if (!g_GameThriveEnableSound)
         goto fail;
 
     IwTrace(GAMETHRIVE, ("GAMETHRIVE init success"));
@@ -251,4 +261,22 @@ void GameThriveOnResume_platform() {
 
 void GameThriveRegisterForPushNotifications_platform() {
 	// On Android we always auto register for push notifications.
+}
+
+void GameThriveEnableVibrate_platform(s3eBool enable) {
+	JNIEnv* env = s3eEdkJNIGetEnv();
+    
+    if (enable == S3E_FALSE)
+    	env->CallVoidMethod(g_Obj, g_GameThriveEnableVibrate, JNI_FALSE);
+    else
+    	env->CallVoidMethod(g_Obj, g_GameThriveEnableVibrate, JNI_TRUE);
+}
+
+void GameThriveEnableSound_platform(s3eBool enable) {
+	JNIEnv* env = s3eEdkJNIGetEnv();
+    
+    if (enable == S3E_FALSE)
+    	env->CallVoidMethod(g_Obj, g_GameThriveEnableSound, JNI_FALSE);
+    else
+    	env->CallVoidMethod(g_Obj, g_GameThriveEnableSound, JNI_TRUE);
 }

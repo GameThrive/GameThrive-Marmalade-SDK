@@ -198,13 +198,24 @@ void GameThriveGetIdsAvailable_platform(GameThriveIdsAvailableCallbackFn callbac
 }
 
 void GameThriveOnResume_platform() {
-    //[gameThrive onFocus:@"resume"];
+  // Only Applies to Android
+  //[gameThrive onFocus:@"resume"];
 }
 
 void GameThriveOnPause_platform() {
-    //[gameThrive onFocus:@"suspend"];
+  // Only Applies to Android
+  //[gameThrive onFocus:@"suspend"];
 }
 
 void GameThriveRegisterForPushNotifications_platform() {
   [gameThrive registerForPushNotifications];
+}
+
+
+void GameThriveEnableVibrate_platform(s3eBool enable) {
+  // Only Applies to Android
+}
+
+void GameThriveEnableSound_platform(s3eBool enable) {
+  // Only Applies to Android
 }

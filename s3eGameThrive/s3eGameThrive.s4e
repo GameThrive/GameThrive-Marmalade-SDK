@@ -69,6 +69,8 @@ void GameThriveGetIdsAvailable(GameThriveIdsAvailableCallbackFn callbackFn) 0 ru
 int GameThriveSystemPaused(void* systemData, void* userData) 0 run_on_os_thread
 int GameThriveSystemResume(void* systemData, void* userData) 0 run_on_os_thread
 void GameThriveRegisterForPushNotifications() 0 run_on_os_thread
+void GameThriveEnableVibrate(s3eBool enable) 0 run_on_os_thread
+void GameThriveEnableSound(s3eBool enable) 0 run_on_os_thread
 
 append:
 /** @} */
